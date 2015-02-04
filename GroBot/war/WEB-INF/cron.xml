@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+	<cron>
+		<url>/email</url>
+		<description>Daily Update</description>
+		<schedule>every day 23:00</schedule>
+		<!-- every day 23:00 (5PM)-->
+	</cron>
+</cronentries>
