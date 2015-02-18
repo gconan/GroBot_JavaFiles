@@ -1,3 +1,5 @@
-SdkRegistrants_1411592019121=com.google.gwt.eclipse.sdkbundle_2.6.0,com.google.appengine.eclipse.sdkbundle_1.9.15
+SdkRegistrants_1411592019121=com.google.gwt.eclipse.sdkbundle_2.6.0,com.google.appengine.eclipse.sdkbundle_1.9.15,com.google.appengine.eclipse.sdkbundle_1.9.17
 eclipse.preferences.version=1
+versionForLastForcedRebuild_GroBot=3.8.0.v201410302155-rel-r44
 versionForLastForcedRebuild_UTBazaar=3.7.0.v201407290036-rel-r44
+versionForLastForcedRebuild_testBot=3.8.0.v201410302155-rel-r44

@@ -9,17 +9,17 @@
 	
 	<servlet>
 		<servlet-name>greetServlet</servlet-name>
-		<servlet-class>utBazaar.server.GreetingServiceImpl</servlet-class>
+		<servlet-class>groBot.server.GreetingServiceImpl</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>greetServlet</servlet-name>
-		<url-pattern>/utbazaar/greet</url-pattern>
+		<url-pattern>/groBot/greet</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>registration</servlet-name>
-		<servlet-class>utBazaar.servlet.RegistrationServlet</servlet-class>
+		<servlet-class>groBot.servlet.RegistrationServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -29,7 +29,7 @@
 
 	<servlet>
 		<servlet-name>resetPassword</servlet-name>
-		<servlet-class>utBazaar.servlet.ResetPasswordServlet</servlet-class>
+		<servlet-class>groBot.servlet.ResetPasswordServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -38,18 +38,8 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>deleteItem</servlet-name>
-		<servlet-class>utBazaar.servlet.DeleteItemServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>deleteItem</servlet-name>
-		<url-pattern>/delete</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
 		<servlet-name>changePassword</servlet-name>
-		<servlet-class>utBazaar.servlet.ChangePasswordServlet</servlet-class>
+		<servlet-class>groBot.servlet.ChangePasswordServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -59,7 +49,7 @@
 
 	<servlet>
 		<servlet-name>login</servlet-name>
-		<servlet-class>utBazaar.servlet.LoginServlet</servlet-class>
+		<servlet-class>groBot.servlet.LoginServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -69,7 +59,7 @@
 
 	<servlet>
 		<servlet-name>logout</servlet-name>
-		<servlet-class>utBazaar.servlet.LogoutServlet</servlet-class>
+		<servlet-class>groBot.servlet.LogoutServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -78,108 +68,8 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>ItemSearch</servlet-name>
-		<servlet-class>utBazaar.servlet.SearchServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>ItemSearch</servlet-name>
-		<url-pattern>/search</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>SellSearch</servlet-name>
-		<servlet-class>utBazaar.servlet.SellSearchServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>SellSearch</servlet-name>
-		<url-pattern>/sellSearch</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>MeetingSearch</servlet-name>
-		<servlet-class>utBazaar.servlet.MeetingSearchServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>MeetingSearch</servlet-name>
-		<url-pattern>/meetingSearch</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>Inquiry</servlet-name>
-		<servlet-class>utBazaar.servlet.InquireServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Inquiry</servlet-name>
-		<url-pattern>/inquire</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>addItem</servlet-name>
-		<servlet-class>utBazaar.servlet.AddItemServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>addItem</servlet-name>
-		<url-pattern>/addItem</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>addMeeting</servlet-name>
-		<servlet-class>utBazaar.servlet.AddMeetingServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>addMeeting</servlet-name>
-		<url-pattern>/addMeeting</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>seeAttending</servlet-name>
-		<servlet-class>utBazaar.servlet.SeeAttendeesServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>seeAttending</servlet-name>
-		<url-pattern>/seeAttending</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>joinMeeting</servlet-name>
-		<servlet-class>utBazaar.servlet.JoinMeetingServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>joinMeeting</servlet-name>
-		<url-pattern>/goToAMeeting</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>ProfilePicture</servlet-name>
-		<servlet-class>utBazaar.servlet.AddProfilePictureServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>ProfilePicture</servlet-name>
-		<url-pattern>/addProfPic</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>unsubscribe</servlet-name>
-		<servlet-class>utBazaar.servlet.UnsubscribeServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>unsubscribe</servlet-name>
-		<url-pattern>/unsubscribe</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
     	<servlet-name>email</servlet-name>
-		<servlet-class>utBazaar.CronServlet</servlet-class>
+		<servlet-class>groBot.CronServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
@@ -189,7 +79,7 @@
 	
 	<servlet>
     	<servlet-name>DeleteAccount</servlet-name>
-		<servlet-class>utBazaar.servlet.DeleteAccountServlet</servlet-class>
+		<servlet-class>groBot.servlet.DeleteAccountServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>

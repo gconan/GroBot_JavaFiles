@@ -23,7 +23,7 @@ public class LogoutServlet extends HttpServlet {
         Cookie[] cookies = request.getCookies();
         if(cookies != null){
         	for(Cookie cookie : cookies){
-        		if(cookie.getName().equals("email")){
+        		if(cookie.getName().equals("GroBotEmail")){
         			cookie.setValue(null);
         		}
         		cookie.setMaxAge(0);
@@ -34,7 +34,7 @@ public class LogoutServlet extends HttpServlet {
         if(session != null){
             session.invalidate();
         }
-        response.sendRedirect("index.html");
+        response.sendRedirect("index.html");	//TODO update html
     }
  
 }

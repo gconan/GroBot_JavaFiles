@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 
- * @author namaz
+ * @author
  *
  */
 public class RegistrationServlet extends HttpServlet{
@@ -22,6 +22,8 @@ public class RegistrationServlet extends HttpServlet{
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		
+		String first = req.getParameter("firstName");	//TODO add parameter
+		String last = req.getParameter("lastName");	//TODO add parameter
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
 		String verifpassword = req.getParameter("verifyPass");
@@ -37,25 +39,25 @@ public class RegistrationServlet extends HttpServlet{
 		}
 
 		// If email address is not in utexas domain 
-		if (!email.endsWith("@utexas.edu")) {
-			resp.sendRedirect("/registrationerror.html");
-			return;
-		}
+//		if (!email.endsWith("@utexas.edu")) {
+//			resp.sendRedirect("/registrationerror.html");	//TODO update html page
+//			return;
+//		}
 
     	if(UserDAO.INSTANCE.getUserByEmail(email) != null) {
-    		resp.sendRedirect("/emailinuse.html");
+    		resp.sendRedirect("/emailinuse.html");	//TODO update html page
     		return;
     	}
     	
-    	User user = new User(pass, email);
+    	User user = new User (first, last, vpass, email);
     	UserDAO.INSTANCE.addUser(user);
     	Email regEmail = new Email();
     	try {
     		regEmail.emailVerification(user);
-    		resp.sendRedirect("/thanksforreg.html");
+    		resp.sendRedirect("/thanksforreg.html");	//TODO update html page
     	} catch (MessagingException m) {
     		UserDAO.INSTANCE.removeUser(user);
-    		resp.sendRedirect("wrongemail.html");
+    		resp.sendRedirect("wrongemail.html");	//TODO update html page
     	}	
 	}
 	
@@ -63,12 +65,12 @@ public class RegistrationServlet extends HttpServlet{
 	    User user = UserDAO.INSTANCE.getUserByAccessCode(req.getParameter("access"));
 	    if (user == null) {
 	    	// user not found. User may have typed the link manually; 
-	    	resp.sendRedirect("error.html");
+	    	resp.sendRedirect("error.html");	//TODO update html page
 	    } else {
 	    	// thanks for confirmation
 	    	user.activate();
 	    	UserDAO.INSTANCE.activateUser(user);
-	    	resp.sendRedirect("confirm.html");
+	    	resp.sendRedirect("confirm.html");	//TODO update html page
 	    }
 	}
 }

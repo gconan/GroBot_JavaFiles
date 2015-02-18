@@ -15,7 +15,7 @@ public class Email {
 
 	 /* rename link to correct app ID*/
 	public void emailVerification(User user) throws MessagingException {
-		String body = "Please, click on link below.\n\nhttp://michaellonghornbazaartest.appspot.com/registration?access=" + user.getAccess_code();
+		String body = "Please, click on link below.\n\nhttp://the-grobot.appspot.com/registration?access=" + user.getAccess_code();
 		String subject = "Verify Registration";
 		try {
 			send(user.getEmail(), body, subject);
@@ -38,7 +38,7 @@ public class Email {
 	/*change reply email*/
 	public void send(String email, String body, String subject) throws MessagingException {
 		MimeMessage outMessage = new MimeMessage(Session.getDefaultInstance(new Properties(), null));
-		outMessage.setFrom(new InternetAddress("donotreply@longhornbazar.appspotmail.com"));
+		outMessage.setFrom(new InternetAddress("donotreply@the-grobot.appspotmail.com"));
 		outMessage.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress(email));
 		outMessage.setSubject(subject);
 		outMessage.setText(body);

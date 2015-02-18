@@ -6,7 +6,6 @@
 package groBot;
 
 import groBot.dao.UserDAO;
-import groBot.entity.Item;
 import groBot.entity.User;
 
 import java.io.IOException;
@@ -34,7 +33,7 @@ public class CronServlet extends HttpServlet {
 	int count;
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-		try {
+		/*try {
 			_logger.info("Cron Job has been executed");
 			
 			List<User> user = UserDAO.INSTANCE.getAllSubscribedUsers();	//user list
@@ -62,7 +61,7 @@ public class CronServlet extends HttpServlet {
 			}
 		}
 		catch (Exception ex) {
-		}
+		}*/
 	}
 
 	@Override

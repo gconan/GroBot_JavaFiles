@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * 
- * @author namaz
+ * @author conangammel
  *
  */
 public class LoginServlet extends HttpServlet{
@@ -28,25 +28,23 @@ public class LoginServlet extends HttpServlet{
         Integer p = password.hashCode();
 		String pass = p.toString();
         
-        User user = new User(pass,email.toLowerCase());
-        
         User fromDB = UserDAO.INSTANCE.getUserByEmail(email);
 
-        if(fromDB != null && user.isSameUser(fromDB)){
+        if(fromDB != null && fromDB.getPassword().equals(pass)){ //TODO check that both are supposed to be the hash codes
         	if(!fromDB.getStatus()) {
-        		RequestDispatcher rd = getServletContext().getRequestDispatcher("/errorverifyregistration.html");
+        		RequestDispatcher rd = getServletContext().getRequestDispatcher("/errorverifyregistration.html");	//TODO update html
                 rd.include(request, response);
         	} else {
         		HttpSession session = request.getSession();
-        		session.setAttribute("email", fromDB.getEmail());
+        		session.setAttribute("GroBotEmail", fromDB.getEmail());
         		session.setMaxInactiveInterval(30*60);
-        		Cookie loginCookie = new Cookie("email",fromDB.getEmail());
+        		Cookie loginCookie = new Cookie("GroBotEmail",fromDB.getEmail());
         		response.addCookie(loginCookie);
-        		String encodedURL = response.encodeRedirectURL("/buy.jsp");
+        		String encodedURL = response.encodeRedirectURL("welcome.html");	//TODO jsp?
         		response.sendRedirect(encodedURL);
         	}
         }else{
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/indexerror.html");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/indexerror.html");	//TODO update html
             rd.include(request, response);
         }
     }

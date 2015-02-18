@@ -8,10 +8,11 @@ import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * 
- * @author namaz
+ * @author conangammel
  *
  */
 public class ChangePasswordServlet extends SecureServlet {
@@ -21,33 +22,31 @@ public class ChangePasswordServlet extends SecureServlet {
 
 		super.doPost(req, resp);
 		if(email == null) return;
-
+				
+		String email = super.getEmail(req, resp);
 		String currPassword = req.getParameter("currPassw");
 		String newPassword = req.getParameter("newPassw");
 		String verifyNewPassword = req.getParameter("verifNewPassw");
-		Integer p = currPassword.hashCode();
-		String pass = p.toString();
-		p = newPassword.hashCode();
-		String newpass = p.toString();
-		p = verifyNewPassword.hashCode();
-		String vnewpass = p.toString();
+		
+		String hashPass = ""+currPassword.hashCode();
+		String newHashPass = ""+newPassword.hashCode();
+		String verNewHashPass = ""+verifyNewPassword.hashCode();
 		
 		
-		if (!newpass.equals(vnewpass)) {
-			// passwords dont match
-			String encodedURL = resp.encodeRedirectURL("errorchangepassword.html");
+		if (!newHashPass.equals(verNewHashPass)) {
+			// new passwords dont match TODO change to let them retry
+			String encodedURL = resp.encodeRedirectURL("errorchangepassword.html");	//TODO update html
 	        resp.sendRedirect(encodedURL);
-		} else {
-			User user = new User(pass, email);
-			User fromDB = UserDAO.INSTANCE.getUserByEmail(user.getEmail());
-			if (!user.isSameUser(fromDB)) {
+		}else{
+			User fromDB = UserDAO.INSTANCE.getUserByEmail(email);
+			if (!fromDB.getPassword().equals(hashPass)) {
 			// curr password is invalid
 				String encodedURL = resp.encodeRedirectURL("errorchangepassword.html");
 				resp.sendRedirect(encodedURL);
 			} else {
-				fromDB.setPassword(newpass);
+				fromDB.setPassword(newHashPass);
 				ofy().save().entity(fromDB).now();
-				String encodedURL = resp.encodeRedirectURL("profile.jsp");
+				String encodedURL = resp.encodeRedirectURL("profile.jsp");	//TODO update jsp
 				resp.sendRedirect(encodedURL);
 			}
 		}

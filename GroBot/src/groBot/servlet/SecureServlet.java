@@ -1,6 +1,7 @@
 package groBot.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +21,7 @@ public abstract class SecureServlet extends HttpServlet{
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		HttpSession session = req.getSession();
-		if(session.getAttribute("email") == null){
+		if(session.getAttribute("GroBotEmail") == null){
 			//TODO add something to tell the user something went wrong
 		    resp.sendRedirect("/index.html");
 		}
@@ -30,9 +31,30 @@ public abstract class SecureServlet extends HttpServlet{
 			Cookie[] cookies = req.getCookies();
 			if(cookies != null){
 				for(Cookie cookie : cookies){
-			    	if(cookie.getName().equals("email")) email = cookie.getValue();
+			    	if(cookie.getName().equals("GroBotEmail")){
+			    		if(email.equals(cookie.getValue())){
+			    			return;
+			    		}
+			    	}
 				}
+			}else{
+				String encodedURL = resp.encodeRedirectURL("index.html");
+				resp.sendRedirect(encodedURL);
 			}
 		}
+	}
+	
+	public String getEmail(HttpServletRequest req, HttpServletResponse resp)throws IOException{
+		HttpSession session = req.getSession();
+		Object email = session.getAttribute("GroBotEmail");
+		
+		if(email == null){
+			resp.sendRedirect("/index.html");
+		}
+		
+		return (String)email;
+		
+		
+
 	}
 }

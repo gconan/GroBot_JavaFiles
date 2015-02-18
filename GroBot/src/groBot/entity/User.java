@@ -21,19 +21,20 @@ public class User implements Serializable{
 	
 	private String password;
 	
-	private String imageKey;
+	@Index
+	private String firstName;
+	
+	private String lastName;
+	
+	@Index
+	private GroBots myBot;
 	
 	@Id 
 	private String email;
 	
-	private boolean status;
+	private ArrayList<Schedule> customSchedules;
 	
-	private ArrayList<Long> itemsForSale = new ArrayList<Long>();
-	
-	private ArrayList<Long> hostedMeetings = new ArrayList<Long>();
-	
-	@Index
-	private boolean subscribed;
+	private boolean registrationStatus;
 	
 	/**
 	 * constructs a user object and his/her access code through HashCode
@@ -41,9 +42,11 @@ public class User implements Serializable{
 	 * @param password
 	 * @param email
 	 */
-	public User(String password, String email) {
-		this.status = false;
+	public User(String fn, String ln, String password, String email) {
+		this.registrationStatus = false;
 		this.password = password;
+		this.firstName = fn;
+		this.lastName = ln;
 		this.email = email;
 		long hash = Math.abs(email.hashCode() * (long) Math.pow(31,5));	
 		StringBuilder code = new StringBuilder();	                         
@@ -52,8 +55,8 @@ public class User implements Serializable{
 			hash/= 27;
 		}
 		this.accessCode = code.toString();
-		this.subscribed = true;
-		this.imageKey = "ut.jpg";	//default until they upload a new one
+		
+		this.myBot = new GroBots();
 	}
 	
 	/**
@@ -87,30 +90,38 @@ public class User implements Serializable{
 		return this.email;
 	}
 	
+	public GroBots getGroBot(){
+		return this.myBot;
+	}
+	
+	public String getFirstName(){
+		return this.firstName;
+	}
+	
+	public void addGroBot(GroBots bot){
+		
+	}
+	
 	/**
 	 * return registration status of the user
-	 * @author namazgurbanov
+	 * @author conangammel
 	 * @return boolean
 	 */
 	public boolean getStatus() {
-		return status;
+		return registrationStatus;
 	}
 	
-	public boolean getSubscribed(){
-		return this.subscribed;
-	}
-
 	/**
 	 * Set user's status to true (they are allowed to log-in)
 	 * @author conangammel
 	 */
 	public void activate() {
-		this.status = true;
+		this.registrationStatus = true;
 	}
 	
 	/**
 	 * updates user object with given password
-	 * @author namazgurbanov
+	 * @author conangammel
 	 * @param String
 	 */
     public void setPassword(String newPassword) {
@@ -119,7 +130,7 @@ public class User implements Serializable{
 	
     /**
 	 * generates random password and updates user object with new password
-	 * @author namazgurbanov
+	 * @author conangammel
 	 */
     public String resetPassword() {
     	StringBuilder newPassw = new StringBuilder("");
@@ -134,51 +145,16 @@ public class User implements Serializable{
     	this.password = pass;
     	return newP;
     }
+    
+    public String getBotName(){
+    	return this.myBot.getName();
+    }
 
-	public void addItem(Long postingID) {
-		this.itemsForSale.add(postingID);
-	}
-	
-	public void addMeeting(long meeting) {
-		this.hostedMeetings.add(meeting);
-	}
 	
 	public boolean isSameUser(User user) {
 		if(user.email.equals(this.email) && user.password.equals(this.password)) {
 			return true;
 		}
 		return false;
-	}
-
-	/**
-	 * after an item is sold, the item must be removed from the user's list of items
-	 * we are counting on the compiler's optimization and the built in list functions
-	 * for time complexity, but at worst we are looking at O(n) ~ O(1) for most Users
-	 * @author conangammel
-	 * @param item
-	 */
-	public void removeItem(Item item) {
-		this.itemsForSale.remove(item.getId());
-	}
-	
-	public void setSub(boolean subbed){
-		this.subscribed=subbed;
-	}
-
-	public void addImageKey(String key) {
-		this.imageKey = key;
-		
-	}
-	
-	public String getImageKey(){
-		return this.imageKey;
-	}
-
-	public ArrayList<Long> getItems() {
-		return this.itemsForSale;
-	}
-
-	public ArrayList<Long> getMeetings() {
-		return this.hostedMeetings;
 	}
 }

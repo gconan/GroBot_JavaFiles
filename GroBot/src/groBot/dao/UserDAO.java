@@ -1,8 +1,6 @@
 package groBot.dao;
 
-import groBot.entity.Item;
-import groBot.entity.Meeting;
-import groBot.entity.Posting;
+import groBot.entity.GroBots;
 import groBot.entity.User;
 
 import java.util.ArrayList;
@@ -15,50 +13,6 @@ import static groBot.services.OfyService.ofy;
 public enum UserDAO {  
 	INSTANCE;
 	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * get the whole list of users
-	 * @author conangammel
-	 * @return List<User>
-	 */
-	public List<User> getAllUsers(){
-		List<User> list = new ArrayList<User>();
-		Query<User> userlist = ofy().load().type(User.class);
-		for(User users: userlist){
-			list.add(users);
-		}
-		return list;
-	}
-	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * get the whole list of users
-	 * @author conangammel
-	 * @return List<User>
-	 */
-	public List<Item> getAllItems(){
-		List<Item> list = new ArrayList<Item>();
-		Query<Item> itemList = ofy().load().type(Item.class);
-		for(Item item: itemList){
-			list.add(item);
-		}
-		return list;
-	}
-	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * get whole list of meetings
-	 * @author Michael
-	 * @return List<Meeting>
-	 */
-	public List<Meeting> getAllMeetings(){
-		List<Meeting> list = new ArrayList<Meeting>();
-		Query<Meeting> meetingList = ofy().load().type(Meeting.class);
-		for(Meeting meeting: meetingList){
-			list.add(meeting);
-		}
-		return list;
-	}
 	
 	/**
 	 * GET USERS GROBOTS?
@@ -67,27 +21,11 @@ public enum UserDAO {
 	 * @param email
 	 * @return List<Item>
 	 */
-	public List<Item> getUserItems(String email){
-		List<Item> list = new ArrayList<Item>();
-		Query<Item> itemList = ofy().load().type(Item.class).filter("owner", email);
-		for(Item item: itemList){
-			list.add(item);
-		}
-		return list;
+	public GroBots getUserBots(String email){
+		User user= getUserByEmail(email);
+		return user.getGroBot();
 	}
 	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * @author conangammel
-	 */
-	public List<User> getAllSubscribedUsers(){
-		List<User> list = new ArrayList<User>();
-		Query<User> itemList = ofy().load().type(User.class).filter("subscribed", true);
-		for(User user: itemList){
-			list.add(user);
-		}
-		return list;
-	}
 	
 	
 	/**
@@ -170,97 +108,13 @@ public enum UserDAO {
     	return fromDB;
     }
 
-    /**
-	 * MARK FOR DESTRUCTION
-     * @author conangammel
-     * @param item
-     */
-	public void addItemToDB(Item item) {
-		ofy().save().entity(item).now();
-		item.addItemToOwner();
-	}
-	
-	
-	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * save new meeting to DB
-	 * @author conangammel
-	 * @param meet
-	 */
-	public void addMeetingToDB(Meeting meet) {
-		ofy().save().entity(meet).now();
-		meet.addMeetingToOwner();
-	}
-	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * @author conangammel
-	 * save existing meeting to DB
-	 */
-	public void saveMeeting(Meeting meet){
-		ofy().save().entity(meet).now();
-	}
-	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * @author conangammel
-	 */
-	public Meeting getMeetingById(Long id){
-		return ofy().load().type(Meeting.class).id(id).now();
-	}
 	/**
 	 * REGCONFIGURE TO DELETE GROBOT , CHANG GROBOT OWNER
 	 * @author conangammel
 	 */
 	public void deleteAccount(String email){
 		User fromDB = ofy().load().type(User.class).id(email).now();
-		ArrayList<Long> items = fromDB.getItems();
-		ArrayList<Long> meetings = fromDB.getMeetings();
 		
-		for(Long id: items){
-			ofy().delete().type(Posting.class).id(id);
-		}
-		for(Long id: meetings){
-			ofy().delete().type(Posting.class).id(id);
-		}
 		ofy().delete().type(User.class).id(email);
-	}
-	/**
-	 * MARK FOR DESTRUCTION
-	 * @author conangammel
-	 * @param email
-	 * @return
-	 */
-	public boolean unsubscribeUser(String email) {
-		try{
-			User user = ofy().load().type(User.class).id(email).now();
-			user.setSub(false);
-			ofy().save().entity(user).now();
-			return true;
-		}catch(Exception e){
-			//user does not exist
-			return false;
-		}
-		
-	}
-	
-	/**
-	 * MARK FOR DESTRUCTION
-	 * @author conangammel
-	 * @param email
-	 * @return
-	 */
-	public boolean subscribeUser(String email) {
-		try{
-			User user = ofy().load().type(User.class).id(email).now();
-			user.setSub(true);
-			ofy().save().entity(user).now();
-			return true;
-		}catch(Exception e){
-			//user does not exist
-			return false;
-		}
-		
 	}
 }
