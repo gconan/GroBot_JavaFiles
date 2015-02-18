@@ -37,10 +37,12 @@ public class LoginServlet extends HttpServlet{
         	} else {
         		HttpSession session = request.getSession();
         		session.setAttribute("GroBotEmail", fromDB.getEmail());
+        		session.setAttribute("name", fromDB.getFirstName());
+        		session.setAttribute("botName", fromDB.getBotName());
         		session.setMaxInactiveInterval(30*60);
         		Cookie loginCookie = new Cookie("GroBotEmail",fromDB.getEmail());
         		response.addCookie(loginCookie);
-        		String encodedURL = response.encodeRedirectURL("welcome.html");	//TODO jsp?
+        		String encodedURL = response.encodeRedirectURL("welcome.jsp");
         		response.sendRedirect(encodedURL);
         	}
         }else{
