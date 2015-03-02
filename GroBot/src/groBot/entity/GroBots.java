@@ -27,7 +27,7 @@ public class GroBots {
 	 */
 	public GroBots(){
 		this.id = 123456;	//default for BS adding to objectify
-		this.name = "XXXGROBOTXXX";
+		this.name = "****DefaultBot****";
 	}
 	
 	public GroBots(String name, byte[] add){

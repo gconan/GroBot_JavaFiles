@@ -8,7 +8,7 @@ margin:0;
 body {
 	margin-top: 100px;
 	padding: 0px;
-	background: #FFFFFF url(images/img02.jpg) repeat-x left top;
+	background: #ffffff url(images/image2.jpg) repeat-x left top;
 	font-size: 14px;
 	color: #000000;
 	height:100%;
@@ -141,7 +141,7 @@ a:hover {
 	border: none;
 	background: none;
 	text-decoration: none;
-	color: #000000;
+	color: #079500;
 }
 
 
@@ -393,7 +393,7 @@ a:hover {
 	width: 50%;
 	align-content:center;
 	margin:auto;
-	border: 3px solid #FF9E00;
+	border: 3px solid #03d500;
     border-radius: 25px;
 }
 
@@ -422,13 +422,13 @@ a:hover {
 
 
 .lhbButton {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ad4e00;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ad4e00;
-	box-shadow:inset 0px 1px 0px 0px #ad4e00;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bf5600), color-stop(1, #b44b00) );
-	background:-moz-linear-gradient( center top, #bf5600 5%, #b44b00 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf5600', endColorstr='#b44b00');
-	background-color:#bf5600;
+	-moz-box-shadow:inset 0px 1px 0px 0px #00af02;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #00af02;
+	box-shadow:inset 0px 1px 0px 0px #00af02;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00af02), color-stop(1, #00af02) );
+	background:-moz-linear-gradient( center top, #00af02 5%, #00af02 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00af02', endColorstr='#00af02');
+	background-color:#00af02;
 	-webkit-border-top-left-radius:20px;
 	-moz-border-radius-topleft:20px;
 	border-top-left-radius:20px;
@@ -442,7 +442,7 @@ a:hover {
 	-moz-border-radius-bottomleft:20px;
 	border-bottom-left-radius:20px;
 	text-indent:0;
-	border:1px solid #bd5500;
+	border:1px solid #0a3d00;
 	display:inline-block;
 	color:#ffffff;
 	font-family:Trebuchet MS;
@@ -454,7 +454,7 @@ a:hover {
 	width:100px;
 	text-decoration:none;
 	text-align:center;
-	text-shadow:2px 6px 2px #c05600;
+	text-shadow:2px 6px 2px #109000;
 	position:relative;
 	top:-60px;
 	
@@ -463,7 +463,7 @@ a:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b44b00), color-stop(1, #bf5600) );
 	background:-moz-linear-gradient( center top, #b44b00 5%, #bf5600 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b44b00', endColorstr='#bf5600');
-	background-color:#b44b00;
+	background-color:#00a23e;
 }.lhbButton:active {
 	
 	position:relative;
