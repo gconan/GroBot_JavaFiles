@@ -22,28 +22,54 @@ public class RegistrationServlet extends HttpServlet{
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		
-		String first = req.getParameter("firstName");	//TODO add parameter
-		String last = req.getParameter("lastName");	//TODO add parameter
+		String first = req.getParameter("firstName");
+		String last = req.getParameter("lastName");
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
 		String verifpassword = req.getParameter("verifyPass");
-		Integer p = password.hashCode();
-		String pass = p.toString();
-		p = verifpassword.hashCode();
-		String vpass = p.toString();		
 		
 		
-		if (!password.equals(verifpassword)) {    
+		if(first == null){
+			resp.sendRedirect("/registrationerror.html");
+			return;
+			
+		}else if(last == null){
+			resp.sendRedirect("/registrationerror.html");
+			return;
+			
+		}else if(email == null){
+			resp.sendRedirect("/registrationerror.html");
+			return;
+			
+		}else if(password == null){
+			resp.sendRedirect("/registrationerror.html");
+			return;
+			
+		}else if(verifpassword == null){
 			resp.sendRedirect("/registrationerror.html");
 			return;
 		}
-
-		// If email address is not in utexas domain 
-//		if (!email.endsWith("@utexas.edu")) {
-//			resp.sendRedirect("/registrationerror.html");	//TODO update html page
-//			return;
-//		}
-
+		
+		
+		if(password.length()<6 && verifpassword.length()<6){
+			resp.sendRedirect("/registrationPasswordError.html");
+			return;
+		}
+		
+		if (!password.equals(verifpassword)) {    
+			resp.sendRedirect("/passwordsDontMatch.html");
+			return;
+		}
+		
+		if(!email.contains("@")||!email.contains(".")){
+			resp.sendRedirect("/invalidRegEmail.html");
+			return;
+		}
+		
+		Integer p = password.hashCode();
+		p = verifpassword.hashCode();
+		String vpass = p.toString();
+		
     	if(UserDAO.INSTANCE.getUserByEmail(email) != null) {
     		resp.sendRedirect("/emailinuse.html");	//TODO update html page
     		return;
@@ -57,7 +83,7 @@ public class RegistrationServlet extends HttpServlet{
     		resp.sendRedirect("/thanksforreg.html");	//TODO update html page
     	} catch (MessagingException m) {
     		UserDAO.INSTANCE.removeUser(user);
-    		resp.sendRedirect("wrongemail.html");	//TODO update html page
+    		resp.sendRedirect("error.html");	//TODO update html page
     	}	
 	}
 	

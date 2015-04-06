@@ -31,7 +31,7 @@ public class EmailHandlerServlet  extends HttpServlet {
 
 			//Send out Email
 			MimeMessage outMessage = new MimeMessage(session);
-			outMessage.setFrom(new InternetAddress("admin@longhornbazaarblog.appspotmail.com"));
+			outMessage.setFrom(new InternetAddress("admin@the-grobot.appspotmail.com"));
 			outMessage.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress(fromAddresses[0].toString()));
 			outMessage.setSubject("Subject");
 			outMessage.setText("Text");

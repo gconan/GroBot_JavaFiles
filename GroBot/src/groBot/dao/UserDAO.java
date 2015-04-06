@@ -1,14 +1,11 @@
 package groBot.dao;
 
-import groBot.entity.GroBots;
-import groBot.entity.User;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import com.googlecode.objectify.cmd.Query;
-
 import static groBot.services.OfyService.ofy;
+import groBot.entity.GroBots;
+import groBot.entity.Lights;
+import groBot.entity.Schedule;
+import groBot.entity.User;
+import groBot.entity.Water;
 
 public enum UserDAO {  
 	INSTANCE;
@@ -17,7 +14,6 @@ public enum UserDAO {
 	/**
 	 * GET USERS GROBOTS?
 	 * get items that belong to a specific user
-	 * @author Michael
 	 * @param email
 	 * @return List<Item>
 	 */
@@ -109,12 +105,56 @@ public enum UserDAO {
     }
 
 	/**
-	 * REGCONFIGURE TO DELETE GROBOT , CHANG GROBOT OWNER
+	 * Deletes the user's Grobots, the user's schedules (which includes lights and water since those are stored too)
+	 * and finally the user is deleted. NOT REVERSIBLE
 	 * @author conangammel
 	 */
 	public void deleteAccount(String email){
 		User fromDB = ofy().load().type(User.class).id(email).now();
 		
+		//delete GroBots
+		for(GroBots g: fromDB.getAllBots()){
+			ofy().delete().type(GroBots.class).id(g.getId());
+		}
+		
+		//delete schedule and components
+		for(Long id: fromDB.getSchedules()){
+			Schedule s = ofy().load().type(Schedule.class).id(id).now();
+			ofy().delete().type(Water.class).id(s.getWaterId());
+			ofy().delete().type(Lights.class).id(s.getLightId());
+			ofy().delete().type(Schedule.class).id(id);
+		}
+		
+		//delete the user
 		ofy().delete().type(User.class).id(email);
+		
+		//database cleaned up from all traces of this user
+	}
+
+
+
+	public Schedule getSchedule(Long long1) {//TODO, make work
+		return ofy().load().type(Schedule.class).id(long1).now();
+	}
+
+
+
+	public void addSchedule(Schedule sched) {
+		synchronized(this){
+			ofy().save().entity(sched).now();
+		}
+		
+	}
+
+
+
+	public void addGroBot(GroBots bot) {
+		ofy().save().entity(bot).now();
+	}
+
+
+
+	public GroBots getGroBot(int hashCode) {
+		return ofy().load().type(GroBots.class).id(hashCode).now();
 	}
 }

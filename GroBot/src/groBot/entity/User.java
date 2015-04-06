@@ -1,5 +1,7 @@
 package groBot.entity;
 
+import groBot.dao.UserDAO;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -26,13 +28,14 @@ public class User implements Serializable{
 	
 	private String lastName;
 	
-	@Index
-	private GroBots myBot;
+	private GroBots currentBot;
+	
+	private ArrayList<GroBots> myBots;
 	
 	@Id 
 	private String email;
 	
-	private ArrayList<Schedule> customSchedules;
+	private ArrayList<Long> customSchedules;
 	
 	private boolean registrationStatus;
 	
@@ -56,7 +59,9 @@ public class User implements Serializable{
 		}
 		this.accessCode = code.toString();
 		
-		this.myBot = new GroBots();
+		this.myBots = new ArrayList<GroBots>();
+		this.currentBot = new GroBots();
+		this.customSchedules = new ArrayList<Long>();
 	}
 	
 	/**
@@ -91,16 +96,31 @@ public class User implements Serializable{
 	}
 	
 	public GroBots getGroBot(){
-		return this.myBot;
+		return this.currentBot;
+	}
+	
+	public ArrayList<GroBots> getAllBots(){
+		if(this.myBots==null){
+			return new ArrayList<GroBots>();
+		}
+		return this.myBots;
 	}
 	
 	public String getFirstName(){
 		return this.firstName;
 	}
 	
-	public void addGroBot(GroBots bot){
-		
+	public String getLastName(){
+		return this.lastName;
 	}
+	
+	public void addGroBot(GroBots bot){
+		this.myBots.add(bot);
+		this.currentBot = bot;
+		UserDAO.INSTANCE.addGroBot(bot);
+		UserDAO.INSTANCE.addUser(this);
+	}
+	
 	
 	/**
 	 * return registration status of the user
@@ -147,7 +167,7 @@ public class User implements Serializable{
     }
     
     public String getBotName(){
-    	return this.myBot.getName();
+    	return this.currentBot.getName();
     }
 
 	
@@ -156,5 +176,27 @@ public class User implements Serializable{
 			return true;
 		}
 		return false;
+	}
+	
+	public ArrayList<Long> getSchedules(){
+		if(this.customSchedules==null){
+			return new ArrayList<Long>();
+		}
+		return this.customSchedules;
+	}
+	
+	public void addCustomSchedule(Schedule s){
+		if(this.customSchedules == null) this.customSchedules = new ArrayList<Long>();
+		int index=0;
+		for(int i=0; i<this.customSchedules.size(); i++){
+			int thisPop = Schedule.get(this.customSchedules.get(i)).getPopularity();
+			int thatPop = s.getPopularity();
+			if(thisPop<thatPop){
+				index = i;
+				break;
+			}
+		}
+		
+		this.customSchedules.add(index, s.id());
 	}
 }

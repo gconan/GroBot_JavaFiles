@@ -1,16 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page language="java" contentType="text/html; charset=US-ASCII" pageEncoding="US-ASCII" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="groBot.entity.User" %>
 <%@ page import="groBot.dao.UserDAO" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> 
-																					
+<%@ page import="groBot.entity.User" %>
+<%@ page import="groBot.entity.Schedule" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ page session="true" %>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Longhorn Bazaar</title>
+		<title>GroBot</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
-		<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="grobot.css" rel="stylesheet" type="text/css" media="screen" />
 		<script type="text/javascript">
 			function getCookie(cname) {
 			    var name = cname + "=";
@@ -24,69 +28,126 @@
 			}
 			
 			function checkCookie() {
-			    var email=getCookie("email");
+			    var email=getCookie("GroBotEmailCookie");
 			    if (email=="") {
 			        window.location.assign("/index.html")
 			    }else{
 			        
 			    }
 			}
-
-			
-
 		</script>
 	</head>
-	<body>
 		<script>
 			checkCookie();
 		</script>
-		<div id="wrapper">
-			<div id="wrapper2">
-				<div id="header" class="container">
+								
+						<%
+							String email = (String)session.getAttribute("GroBotEmail");
+						%>
+				<div id="titleBox">
 					<div id="logo">
-						<a href="index.html">
-							<h1>Longhorn Bazaar</h1><br/>
-							<p>Helping Longhorns trade</p>
+						<a href="welcome.jsp">
+							<h1>GroBot</h1>
+							<br/>
+							<p>What you grow is not our business</p>
 						</a>
 					</div>
-					<div id="menu">
-						<ul>
-							<li><a href="buy.jsp">Buy</a></li>
-							<li><a href="sell.jsp">Sell</a></li>
-							<li><a href="activities.jsp">Activities</a></li>
-							<li class="current_page_item"><a href="#">Profile</a></li>
-							<li><a href="/logout">Logout</a></li>
-							
-						</ul>
-					</div>
 				</div>
-				<div id="page">
-					<div id="content">
+				<div id="menu">
+					<ul>
+						<li><a href="welcome.jsp">Welcome</a></li>
+						<li><a href="schedule.jsp">New Schedule</a></li>
+						<li><a href="status.jsp">Status</a></li>
+						<li class="current_page_item"><a href="#">Profile</a></li>
+						<li><a href="/logout">Logout</a></li>
+					</ul>
+				</div>
+				<table style="border-collapse: collapse;">
+					<tr>
+						<td>
+							<div id="outsideL" style="height:1200px;"></div>
+							<div id="outsideR" style="height:1200px;"></div>
+					  		<div id="content" style="height:1200px;">
+								<br>
+<%
+					if(session.getAttribute("GroBotEmail") != null){
+						String em = (String)session.getAttribute("GroBotEmail");
+						String name = (String)session.getAttribute("name");
+						String last = (String)session.getAttribute("last");
+
+					}%>
+						<h2>${fn:escapeXml(name)} ${fn:escapeXml(last)}</h2>
 						<br>
-						<div style="height:650px; overflow: hidden">
-							<div>
-								<p>
-									<div>
-									<img style="float: left; margin: 0px 15px 15px 0px; height: 150px; overflow: hidden;" width="150" />
-									<img style="float: right; margin: 0px 15px 15px 0px; height: 150px; overflow: hidden;" width="150" />
-									</div>
-									<br>
-									<center>
-										<h2>name</h2>
-										<br>
-									</center>
+
+						<%
+							if(session.getAttribute("GroBotEmail") != null){
+								String emailadd = (String)session.getAttribute("GroBotEmail");
+								ArrayList<Long> scheds = (UserDAO.INSTANCE.getUserByEmail(emailadd)).getSchedules();
+								ArrayList<Schedule> schedules = new ArrayList<Schedule>();
+								
+								for(int i=0; i<scheds.size(); i++){
+									schedules.add(UserDAO.INSTANCE.getSchedule(scheds.get(i)));
+								}
+						%>
+							<div style="margin: 120px 15px 15px 0px;"><br><h2>Edit Your Schedules</h2><br>
+								<form action="/editSched" method="post">
+										<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(emailadd)}"/>
+										<select name="schedule">
+											<%
+												for(int i=0; i<schedules.size(); i++){
+													pageContext.setAttribute("value", schedules.get(i).getValue());
+													pageContext.setAttribute("sName", schedules.get(i).getName());
+													//String value = schedules.get(i).getValue();
+													//String sName = schedules.get(i).getName();
+												%>
+													<option value="${fn:escapeXml(value)}">${fn:escapeXml(sName)}</option>
+												<%
+												}
+							}
+												%>
+											
+									  	</select>
+										<input class="btn" type="submit" name="button" value="Edit Schedule"/>
+									</form>
+							</div>
 									<p>
-										<div style="margin: 120px 15px 15px 0px;"><br>Want to change your password?
-											<form action="/changep" method="post">
-												Current Password: <input type="text" name="currPassw" id="currPassw" /><br>
-												New Password: <input type="text" name="newPassw" id="newPassw" /><br>
-												Verify New Password: <input type="text" name="verifNewPassw" id="currPassw" /><br>
-												<input type="submit" name="submit" id="submit" value="Change" />
+										<div style="margin: 120px 15px 15px 0px;"><br><h2>Add a New GroBot</h2><br>
+											<form action="/addGB" method="post">
+												<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(email)}"/>
+													MacAddress: <br><input type="text" name="mac" id="mac" /><br><br>
+													Name Your GroBot: <br><input type="text" name="nameofbot" id="nameofbot"/>
+												
+												<br>
+												<br>
+												<input class="btn" type="submit" name="submit" id="submit" value="Add My GroBot" />
 											</form>
 											<br>
-											<form action="/deleteAccount" method="post">
-												<input type="submit" name="delete" id="delete" value="Delete Account" />
+											<br>
+										</div>
+									</p>
+								
+
+
+									<p>
+										<div style="margin: 120px 15px 15px 0px;"><br><h2>Want to change your password?</h2><br>
+											<form action="/changep" method="post">
+												Current Password: <input type="text" name="currPassw" id="currPassw" /><br>
+												New Password: <input type="password" name="newPassw" id="newPassw" /><br>
+												Verify New Password: <input type="password" name="verifNewPassw" id="currPassw" /><br><br>
+												<input class="btn" type="submit" name="submit" id="submit" value="Change Password" />
 											</form>
+
+											<br>
+											<br>
+											<br>
+											<br>
+											
+											<br>
+											<div style="margin: 120px 15px 15px 0px;"><br><h2>Don't Leave Us :(</h2><br>
+												<form action="/deleteAccount" method="post">
+													<input class="btn" type="submit" name="delete" id="delete" value="Delete Account" />
+												</form>
+											</div>
 											<br>
 										</div>
 									</p>
@@ -96,15 +157,17 @@
 							</div>	
 							<br>
 						</div>
-					</div>
-				</div> 
 			</div>
-			<div id="footer-content" valign="bottom">
-				<div id="footer">
-					<p>still not sure what we are putting here </p> <!-- end #footer -->
+		</td>
+	</tr>
+	<tr>		
+		<td>	
+			<div id="footer" style="margin-top: 1250px;">
+					<div id="footer-content">
+					<p>The University of Texas at Austin ECE Senior Design Project, sponsored by Texas Instruments</p> <!-- end #footer -->
 				</div>
 			</div>
-		</div>
-	</body>
+		</td>
+	</tr>
+		
 </html>
-

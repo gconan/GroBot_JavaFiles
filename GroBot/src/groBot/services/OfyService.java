@@ -2,7 +2,10 @@ package groBot.services;
 
 import groBot.client.GroBot;
 import groBot.entity.GroBots;
+import groBot.entity.Lights;
+import groBot.entity.Schedule;
 import groBot.entity.User;
+import groBot.entity.Water;
 
 import java.util.ArrayList;
 
@@ -22,6 +25,9 @@ public class OfyService {
 		ObjectifyService.begin();
 		 factory().register(User.class);
 		 factory().register(GroBots.class);
+		 factory().register(Water.class);
+		 factory().register(Lights.class);
+		 factory().register(Schedule.class);
 		 factory().begin();
 	 }
  

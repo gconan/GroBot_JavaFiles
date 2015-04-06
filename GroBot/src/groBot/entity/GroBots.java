@@ -1,9 +1,8 @@
 package groBot.entity;
 
-import java.util.ArrayList;
-
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
+import com.googlecode.objectify.annotation.Index;
 
 /**
  * Object representation of the GroBot
@@ -16,24 +15,86 @@ import com.googlecode.objectify.annotation.Id;
 public class GroBots {
 	
 	@Id
-	private long id;
+	private Long id;
 	
 	private byte[] macAddress;
 	
 	private String name;
 	
+	@Index
+	private Schedule currentSchedule;
+	
+	@Index
+	private String ownerEmail;
+	
+	private String lightTimeRemaining;
+	public String getLightTimeRemaining() {
+		return lightTimeRemaining;
+	}
+
+	public void setLightTimeRemaining(String lightTimeRemaining) {
+		this.lightTimeRemaining = lightTimeRemaining;
+	}
+
+	public String getWaterTimeRemaining() {
+		return waterTimeRemaining;
+	}
+
+	public void setWaterTimeRemaining(String waterTimeRemaining) {
+		this.waterTimeRemaining = waterTimeRemaining;
+	}
+
+	public String getAuxOn() {
+		return auxOn;
+	}
+
+	public void setAuxOn(String auxOn) {
+		this.auxOn = auxOn;
+	}
+
+	public String getAirOn() {
+		return airOn;
+	}
+
+	public void setAirOn(String airOn) {
+		this.airOn = airOn;
+	}
+
+	public String getLightOn() {
+		return lightOn;
+	}
+
+	public void setLightOn(String lightOn) {
+		this.lightOn = lightOn;
+	}
+
+	public String getWaterOn() {
+		return waterOn;
+	}
+
+	public void setWaterOn(String waterOn) {
+		this.waterOn = waterOn;
+	}
+
+	private String waterTimeRemaining;
+	private String auxOn;
+	private String airOn;
+	private String lightOn;
+	private String waterOn;
+	
 	/**
 	 * TODO
 	 */
 	public GroBots(){
-		this.id = 123456;	//default for BS adding to objectify
 		this.name = "****DefaultBot****";
+		this.id = (long) this.name.hashCode();
 	}
 	
-	public GroBots(String name, byte[] add){
+	public GroBots(String name, byte[] add, String owner){
 		this.name = name;
 		this.macAddress = add;
-		this.id = this.macAddress.hashCode();
+		this.id = (long) this.macAddress.hashCode();
+		this.ownerEmail = owner;
 	}
 	
 	/**
@@ -41,53 +102,17 @@ public class GroBots {
 	 * @param sched
 	 */
 	public void runSchedule(Schedule sched){
-		
+		sched.upPopularity();
+		this.currentSchedule = sched;
+		//an http request will automatically use the "currentSchedule" as data for the GroBot to read.
 	}
 	
 	public String getName(){
 		return this.name;
 	}
 	
-	/**
-	 * TODO
-	 */
-	public void turnLightsOn(){
-		
-	}
-	
-	/**
-	 * TODO
-	 */
-	public void turnLightsOff(){
-		
-	}
-	
-	/**
-	 * TODO
-	 */
-	public void turnWaterOn(){
-		
-	}
-	
-	/**
-	 * TODO
-	 */
-	public void turnWaterOff(){
-		
-	}
-	
-	/**
-	 * TODO
-	 */
-	public void turnAirOn(){
-		
-	}
-	
-	/**
-	 * TODO
-	 */
-	public void turnAirOff(){
-		
+	public long getId(){
+		return this.id;
 	}
 	
 	/**
@@ -112,5 +137,9 @@ public class GroBots {
 	 */
 	public Boolean isAirOn(){
 		return false;
+	}
+	
+	public Schedule getCurrentSchedule(){
+		return this.currentSchedule;
 	}
 }

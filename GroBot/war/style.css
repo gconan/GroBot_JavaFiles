@@ -8,7 +8,7 @@ margin:0;
 body {
 	margin-top: 100px;
 	padding: 0px;
-	background: #ffffff url(images/image2.jpg) repeat-x left top;
+	background: #ffffff url(images/test2.jpg) repeat-x left top;
 	font-size: 14px;
 	color: #000000;
 	height:100%;
@@ -425,9 +425,9 @@ a:hover {
 	-moz-box-shadow:inset 0px 1px 0px 0px #00af02;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #00af02;
 	box-shadow:inset 0px 1px 0px 0px #00af02;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00af02), color-stop(1, #00af02) );
-	background:-moz-linear-gradient( center top, #00af02 5%, #00af02 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00af02', endColorstr='#00af02');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00af02), color-stop(1, #0f7925) );
+	background:-moz-linear-gradient( center top, #00af02 5%, #0f7925 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00af02', endColorstr='#0f7925');
 	background-color:#00af02;
 	-webkit-border-top-left-radius:20px;
 	-moz-border-radius-topleft:20px;
@@ -458,12 +458,12 @@ a:hover {
 	position:relative;
 	top:-60px;
 	
-}
+}#00a23e
 .lhbButton:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b44b00), color-stop(1, #bf5600) );
-	background:-moz-linear-gradient( center top, #b44b00 5%, #bf5600 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b44b00', endColorstr='#bf5600');
-	background-color:#00a23e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0b581b), color-stop(1, #0b581b) );
+	background:-moz-linear-gradient( center top, #0b581b 5%, #0b581b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b581b', endColorstr='#0b581b');
+	background-color: #0b581b;
 }.lhbButton:active {
 	
 	position:relative;

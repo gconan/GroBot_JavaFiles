@@ -1,18 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page language="java" contentType="text/html; charset=US-ASCII" pageEncoding="US-ASCII" %>
-<%@ page import="groBot.dao.UserDAO" %>
-<%@ page import="groBot.entity.User" %>
-<%@ page import="groBot.entity.Schedule" %>
-<%@ page import="java.util.ArrayList" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page session="true" %>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>GroBot</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
-		<link rel="shortcut icon" href="http://the-grobot.appspot.com/war/favicon.ico">
 		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 		<link href="grobot.css" rel="stylesheet" type="text/css" media="screen" />
 		<script type="text/javascript">
@@ -51,73 +47,32 @@
 				</div>
 					<div id="menu">
 						<ul>
-							<li class="current_page_item"><a href="#">Welcome</a></li>
+							<li><a href="welcome.jsp">Welcome</a></li>
 							<li><a href="schedule.jsp">New Schedule</a></li>
-							<li><a href="status.jsp">Status</a></li>
+							<li class="current_page_item"><a href="#">Status</a></li>
 							<li><a href="profile.jsp">Profile</a></li>
 							<li><a href="/logout">Logout</a></li>
+							
 						</ul>
 					</div>
 				<%
 					if(session.getAttribute("GroBotEmail") != null){
-					try{
-					String location= "0";
 						String em = (String)session.getAttribute("GroBotEmail");
 						String name = (String)session.getAttribute("name");
 						String botName = (String)session.getAttribute("botName");
-					if(em==null||name==null||botName==null){location += " 0.5";}
-						ArrayList<Long> scheds = (UserDAO.INSTANCE.getUserByEmail(em)).getSchedules();
-					if(scheds==null){location += " 1";}
-					if(scheds.size()==0){location += " 1.5";}
-						ArrayList<Schedule> schedules = new ArrayList<Schedule>();
-						
-						for(int i=0; i<scheds.size(); i++){
-							schedules.add(UserDAO.INSTANCE.getSchedule(scheds.get(i)));
-						}
-					if(schedules==null){location += " 2";}
-					if(schedules.size()==0){location += " 2.5";}
+					}
 				%>
-			
+				
 					<div id="outsideL"></div>
 					<div id="outsideR"></div>
 			  		<div id="content">
-					
-							<br>
-						  <span class="welcometext">Hello ${fn:escapeXml(name)}, Welcome to GroBot!</span>
 							<div style="height:200px; overflow: hidden">
-								
 								<br>
-								<h2>Currently connected to: ${fn:escapeXml(botName)}</h2>
-								<p>
-									<form action="/growNow" method="post">
-										<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(em)}"/>
-										<select name="schedule">
-											<option value="CayennePeppers">Cayenne Peppers</option>
-											<option value="Tomatoes">Tomatoes</option>
-											<option value="HabaneroPeppers">Habanero Peppers</option>
-											<%
-												for(int i=0; i<schedules.size(); i++){
-													pageContext.setAttribute("value", schedules.get(i).getValue());
-													pageContext.setAttribute("sName", schedules.get(i).getName());
-													//String value = schedules.get(i).getValue();
-													//String sName = schedules.get(i).getName();
-												%>
-													<option value="${fn:escapeXml(value)}">${fn:escapeXml(sName)}</option>
-												<%
-												}
-						}catch(Exception e){
-						%><h2>${fn:escapeXml(location)}</h2><%
-					}
-				}
-												%>
-											
-									  	</select>
-										<input class="btn" type="submit" name="button" value="Grow Now!"/>
-									</form>
-								</p>
-							</div>	
-							<br>			
-						</div>
+								<h2>Current Status Of: ${fn:escapeXml(botName)}</h2>
+							</div>				
+
+						
+					</div>
 		<div id="footer">
 			<div id="footer-content">
 				<p>The University of Texas at Austin ECE Senior Design Project, sponsored by Texas Instruments</p> <!-- end #footer -->

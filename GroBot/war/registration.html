@@ -2,67 +2,78 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Longhorn Bazaar Registration</title>
+<title>GroBot</title>
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="grobot.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+	function getCookie(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0; i<ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1);
+	        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+	    }
+	    return "";
+	}
+	
+	function checkCookie() {
+	    var email=getCookie("email");
+	    if (email!="") {
+	        window.location.assign("/welcome.jsp")
+	    }else{
+	        
+	    }
+	}
+</script>
 </head>
+
 <body>
-<div id="wrapper">
-	<div id="wrapper2">
-		<div id="header" class="container">
+<script>
+		checkCookie();
+</script>
+		<div id="titleBoxX">
 			<div id="logo">
 			<a href="/index.html">
-				<h1>Longhorn Bazaar</h1><br />
-				<p>Helping Longhorns trade</p>
+				<h1>GroBot</h1>
+				<br/>
+				<p>What you grow is not our business</p>
 			</a>
 			</div>
-		</div>
-		<div id="page">
+			</div>
 		  <div id="content">
-				<div class="post">
-                <center>
-					<h2 class="title"><span style="font-size: 24pt">Welcome to the Longhorn Bazaar!</span></h2></center>
-				</div>
+			  <br>
+			  <br>
+			  <p>Create a Profile to Access Your GroBot. We will send you a verification link to your email address so you can complete your registration.</p>
 				
-				
-				<div style=clear: both; color: #000000;">&nbsp;
-				  <p>space for instructions</p>				 
-                  <div class="login" id="loginbox">
+                  <div id="loginbox">
                     <p>
                     <center>
 					<form action="/registration" method="post" name="registration">
                         <div>
-                        First Name:
+                        <label for="firstName">First Name:</label>
                         <input type="text" name="firstName" id="firstName" /><br>
-                        Last Name:
+                        <label for="lastName">Last Name:</label>
                         <input type="text" name="lastName" id="lastName" /><br>
-					    Email Address:
+					    <label for="email">Email Address:</label>
                         <input type="text" name="email" id="email" /><br>
-                        Password:
-                        <input type="text" name="password" id="password" /><br>
-                        Verify Password:
-                        <input type="text" name="verifyPass" id="verifyPass" /><br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" /><br>
+                        <label for="verifyPass">Verify Password:</label>
+                        <input type="password" name="verifyPass" id="verifyPass" /><br><br>
                         
-						<input type="submit" name="submit" id="submit" value="Register!" />
+						<input class="btn" type="submit" name="submit" id="submit" value="Register!" />
 						</div>
 						</form>
-					  
-                      
                     </center>
                     </p>
                   </div>
                   <p>
                   </p>
-            </div>
+           </div>
+            <div id="footer">
+			<div id="footer-content">
+				<p>The University of Texas at Austin ECE Senior Design Project, sponsored by Texas Instruments</p> <!-- end #footer -->
 			</div>
-		  <div style="clear: both;"></div>
 		</div>
-	   
-</div></div>
-     </div>
-<div id="footer-content">
-	<div id="footer">
-		<p>This space can be used for more links or whatever we want. </p>
-	</div>
-</body>
 </html>

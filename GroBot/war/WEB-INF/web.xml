@@ -26,6 +26,27 @@
 		<servlet-name>registration</servlet-name>
 		<url-pattern>/registration</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addBot</servlet-name>
+		<servlet-class>groBot.servlet.AddGroBotServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addBot</servlet-name>
+		<url-pattern>/addGB</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>data</servlet-name>
+		<servlet-class>groBot.servlet.DataTransferServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>data</servlet-name>
+		<url-pattern>/UtEceSeniorDesignTeam33GroBotDataXferCommunicationServlet</url-pattern>
+	</servlet-mapping>
+	
 
 	<servlet>
 		<servlet-name>resetPassword</servlet-name>
@@ -65,6 +86,16 @@
 	<servlet-mapping>
 		<servlet-name>logout</servlet-name>
 		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>schedule</servlet-name>
+		<servlet-class>groBot.servlet.NewScheduleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>schedule</servlet-name>
+		<url-pattern>/newSchedule</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

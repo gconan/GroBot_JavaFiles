@@ -15,7 +15,7 @@ public class Email {
 
 	 /* rename link to correct app ID*/
 	public void emailVerification(User user) throws MessagingException {
-		String body = "Please, click on link below.\n\nhttp://the-grobot.appspot.com/registration?access=" + user.getAccess_code();
+		String body = "Please, click on link below to complete your registration.\n\nhttp://the-grobot.appspot.com/registration?access=" + user.getAccess_code();
 		String subject = "Verify Registration";
 		try {
 			send(user.getEmail(), body, subject);

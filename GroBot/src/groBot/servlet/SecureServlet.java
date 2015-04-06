@@ -26,12 +26,12 @@ public abstract class SecureServlet extends HttpServlet{
 		    resp.sendRedirect("/index.html");
 		}
 		else {
-			email = (String) session.getAttribute("email");
+			email = (String) session.getAttribute("GroBotEmail");
 
 			Cookie[] cookies = req.getCookies();
 			if(cookies != null){
 				for(Cookie cookie : cookies){
-			    	if(cookie.getName().equals("GroBotEmail")){
+			    	if(cookie.getName().equals("GroBotEmailCookie")){
 			    		if(email.equals(cookie.getValue())){
 			    			return;
 			    		}

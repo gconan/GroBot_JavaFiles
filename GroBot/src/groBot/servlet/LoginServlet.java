@@ -32,15 +32,20 @@ public class LoginServlet extends HttpServlet{
 
         if(fromDB != null && fromDB.getPassword().equals(pass)){ //TODO check that both are supposed to be the hash codes
         	if(!fromDB.getStatus()) {
-        		RequestDispatcher rd = getServletContext().getRequestDispatcher("/errorverifyregistration.html");	//TODO update html
+        		RequestDispatcher rd = getServletContext().getRequestDispatcher("/errorverifyregistration.html");
                 rd.include(request, response);
         	} else {
         		HttpSession session = request.getSession();
         		session.setAttribute("GroBotEmail", fromDB.getEmail());
-        		session.setAttribute("name", fromDB.getFirstName());
+        		String first = fromDB.getFirstName();
+        		first = first.toUpperCase().charAt(0)+first.substring(1);
+        		session.setAttribute("name", first);
+        		String last = fromDB.getLastName();
+        		last = last.toUpperCase().charAt(0)+last.substring(1);
+        		session.setAttribute("last", last);
         		session.setAttribute("botName", fromDB.getBotName());
         		session.setMaxInactiveInterval(30*60);
-        		Cookie loginCookie = new Cookie("GroBotEmail",fromDB.getEmail());
+        		Cookie loginCookie = new Cookie("GroBotEmailCookie",fromDB.getEmail());
         		response.addCookie(loginCookie);
         		String encodedURL = response.encodeRedirectURL("welcome.jsp");
         		response.sendRedirect(encodedURL);
