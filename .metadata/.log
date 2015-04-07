@@ -8353,3 +8353,7 @@ Navigate to the console view for "Datanucleus Enhancer" for more information
 !ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:55:22.518
 !MESSAGE Analytics ping response: 200: OK
 GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-07 09:58:16.703
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
