@@ -134,13 +134,11 @@ public class Schedule {
 //	}
 
 	public String getLightOn() {
-		// TODO Auto-generated method stub
-		return null;
+		return ""+this.lightSchedule.getOnTime();
 	}
 
 	public String getLightOff() {
-		// TODO Auto-generated method stub
-		return null;
+		return ""+this.lightSchedule.getOffTime();
 	}
 	
 	public long getId(){
@@ -148,27 +146,22 @@ public class Schedule {
 	}
 
 	public String getLightPins() {
-		// TODO Auto-generated method stub
-		return null;
+		return ""+this.lightSchedule.getLightPins();
 	}
 
 	public String getWaterDuration() {
-		// TODO Auto-generated method stub
-		return null;
+		return ""+this.waterSchedule.getWaterDuration();
 	}
 
 	public String getWaterPeriod() {
-		// TODO Auto-generated method stub
-		return null;
+		return ""+this.waterSchedule.getWaterPeriod();
 	}
 
 	public String getAux() {
-		// TODO Auto-generated method stub
-		return null;
+		return ""+this.auxPort;
 	}
 
 	public String getAir() {
-		// TODO Auto-generated method stub
-		return null;
+		return ""+this.airStone;
 	}
 }
