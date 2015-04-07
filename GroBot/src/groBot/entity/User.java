@@ -35,6 +35,7 @@ public class User implements Serializable{
 	@Id 
 	private String email;
 	
+	@Index
 	private ArrayList<Long> customSchedules;
 	
 	private boolean registrationStatus;
@@ -62,8 +63,50 @@ public class User implements Serializable{
 		this.myBots = new ArrayList<GroBots>();
 		this.currentBot = new GroBots();
 		this.customSchedules = new ArrayList<Long>();
+		addDefaultSchedules();
 	}
 	
+	private void addDefaultSchedules() {
+		Schedule cayenne = new Schedule("Cayenne Peppers");
+		Schedule tomatoes = new Schedule("Tomatoes Peppers");
+		Schedule habanero = new Schedule("Habanero Peppers");
+		
+		cayenne.newLights(600, 1800, true, true);
+		cayenne.newWaterSchedule(15, 6);
+		cayenne.setAir(true);
+		cayenne.setAux(false);
+		cayenne.setWaterID();
+		cayenne.setLightID();
+		
+		tomatoes.newLights(700, 1600, true, false);
+		tomatoes.newWaterSchedule(15, 1);
+		tomatoes.setAir(true);
+		tomatoes.setAux(false);
+		tomatoes.setWaterID();
+		tomatoes.setLightID();
+		
+		habanero.newLights(600, 1800, true, true);
+		habanero.newWaterSchedule(15, 6);
+		habanero.setAir(true);
+		habanero.setAux(false);
+		habanero.setWaterID();
+		habanero.setLightID();
+		
+		this.customSchedules.add(cayenne.id());
+		this.customSchedules.add(tomatoes.id());
+		this.customSchedules.add(habanero.id());
+		
+		UserDAO.INSTANCE.addSchedule(cayenne);
+		UserDAO.INSTANCE.addSchedule(tomatoes);
+		UserDAO.INSTANCE.addSchedule(habanero);
+		
+		this.currentBot.runSchedule(cayenne);
+		
+//		this.addCustomSchedule(cayenne);
+//		this.addCustomSchedule(tomatoes);
+//		this.addCustomSchedule(habanero);
+	}
+
 	/**
 	 * we have to have a default constructor for the sake of objectify
 	 * @author conangammel
@@ -198,5 +241,13 @@ public class User implements Serializable{
 		}
 		
 		this.customSchedules.add(index, s.id());
+	}
+
+	public void removeSchedule(Long id) {
+		this.customSchedules.remove(id);
+		
+		if(this.currentBot.getCurrentSchedule().getId()==id){
+			this.currentBot.runSchedule(UserDAO.INSTANCE.getSchedule(this.customSchedules.get(0)));
+		}
 	}
 }

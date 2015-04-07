@@ -164,4 +164,17 @@ public class Schedule {
 	public String getAir() {
 		return ""+this.airStone;
 	}
+
+	public void setLights(int lightsOnTime, int lightsOffTime, boolean s1, boolean s2) {
+		this.lightSchedule.setLOn(lightsOnTime);
+		this.lightSchedule.setLOff(lightsOffTime);
+		this.lightSchedule.setPins(s1,s2);
+		
+	}
+
+	public void setWaterSchedule(int wlength, int wperiod) {
+		this.waterSchedule.setDuration(wlength);
+		this.waterSchedule.setPeriod(wperiod);
+		
+	}
 }

@@ -72,6 +72,8 @@
 		<div id="content" style="height:700px;">
 			<br>
 			<%
+				String size = (String)session.getAttribute("size");
+				String schedID = (String)session.getAttribute("schedID");
 				String email = (String)session.getAttribute("GroBotEmail");
 				String schedName = (String)session.getAttribute("schedName");
 				String lightOn = (String)session.getAttribute("lightOn");
@@ -85,8 +87,8 @@
 				String air = (String)session.getAttribute("air");
 			%>
 			<div id="formBox">
-			<form action="/newSchedule" method="post" >
-				<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(email)}"/>
+			<form action="/saveChanges" method="post" >
+				<input type="hidden" name="schedID" value="${fn:escapeXml(schedID)}"/>
 				<h2>Edit Your Custom Schedule</h2>
 				<p>Feel free to edit any part of your schedule.</p>					
 				<div class="row">
@@ -464,7 +466,21 @@
 					<center>
 						<input class="btn" type="submit" name="submit" value="Save Changes" />
 					</center>
-			</form>	
+			</form>
+			<br>
+			<br>
+			<%if(size.equals("1")){%>
+
+				<p>You cannot delete your last schedule. You must have at least one schedule for the GroBot to run.</p>
+
+			<% }else{ %>	
+				<form action="/deleteSchedule" method="post" >
+					<input type="hidden" name="schedID" value="${fn:escapeXml(schedID)}"/>
+						<center>
+								<input class="btn" type="submit" name="submit" value="Delete Schedule" />
+						</center>
+				</form>
+			<%}%>
 		</div>
 		</div>
 	</td>

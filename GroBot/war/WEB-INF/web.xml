@@ -28,6 +28,16 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>deleteSchedule</servlet-name>
+		<servlet-class>groBot.servlet.DeleteScheduleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deleteSchedule</servlet-name>
+		<url-pattern>/deleteSchedule</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>grow</servlet-name>
 		<servlet-class>groBot.servlet.GrowNowServlet</servlet-class>
 	</servlet>
@@ -35,6 +45,16 @@
 	<servlet-mapping>
 		<servlet-name>grow</servlet-name>
 		<url-pattern>/growNow</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>saveChanges</servlet-name>
+		<servlet-class>groBot.servlet.ChangeScheduleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>saveChanges</servlet-name>
+		<url-pattern>/saveChanges</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

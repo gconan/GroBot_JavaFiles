@@ -80,4 +80,18 @@ public class Lights {
 		this.sched_id = id_of_schedule;
 	}
 
+	public void setLOn(int lightsOnTime) {
+		this.onTime = lightsOnTime;
+		
+	}
+
+	public void setLOff(int lightsOffTime) {
+		this.offTime = lightsOffTime;
+		
+	}
+
+	public void setPins(boolean s1, boolean s2) {
+		this.lightPins = this.convertBooleantoInt(s1, s2);
+	}
+
 }

@@ -85,9 +85,6 @@
 									<form action="/growNow" method="post">
 										<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(em)}"/>
 										<select name="schedule">
-											<option value="CayennePeppers">Cayenne Peppers</option>
-											<option value="Tomatoes">Tomatoes</option>
-											<option value="HabaneroPeppers">Habanero Peppers</option>
 											<%
 												for(int i=0; i<schedules.size(); i++){
 													pageContext.setAttribute("value", schedules.get(i).getValue());

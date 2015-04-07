@@ -157,4 +157,10 @@ public enum UserDAO {
 	public GroBots getGroBot(int hashCode) {
 		return ofy().load().type(GroBots.class).id(hashCode).now();
 	}
+
+
+
+	public void removeSchedule(Long id) {
+		ofy().delete().type(Schedule.class).id(id);
+	}
 }
