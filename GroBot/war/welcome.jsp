@@ -60,22 +60,15 @@
 					</div>
 				<%
 					if(session.getAttribute("GroBotEmail") != null){
-					try{
-					String location= "0";
 						String em = (String)session.getAttribute("GroBotEmail");
 						String name = (String)session.getAttribute("name");
 						String botName = (String)session.getAttribute("botName");
-					if(em==null||name==null||botName==null){location += " 0.5";}
 						ArrayList<Long> scheds = (UserDAO.INSTANCE.getUserByEmail(em)).getSchedules();
-					if(scheds==null){location += " 1";}
-					if(scheds.size()==0){location += " 1.5";}
 						ArrayList<Schedule> schedules = new ArrayList<Schedule>();
 						
 						for(int i=0; i<scheds.size(); i++){
 							schedules.add(UserDAO.INSTANCE.getSchedule(scheds.get(i)));
 						}
-					if(schedules==null){location += " 2";}
-					if(schedules.size()==0){location += " 2.5";}
 				%>
 			
 					<div id="outsideL"></div>
@@ -105,9 +98,6 @@
 													<option value="${fn:escapeXml(value)}">${fn:escapeXml(sName)}</option>
 												<%
 												}
-						}catch(Exception e){
-						%><h2>${fn:escapeXml(location)}</h2><%
-					}
 				}
 												%>
 											

@@ -66,7 +66,7 @@ public class Schedule {
 	}
 	
 	public String getValue(){
-		return this.value;
+		return ""+this.id();
 	}
 	
 	public void setAux(boolean b){

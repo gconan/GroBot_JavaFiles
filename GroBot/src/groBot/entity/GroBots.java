@@ -28,6 +28,77 @@ public class GroBots {
 	private String ownerEmail;
 	
 	private String lightTimeRemaining;
+	private String waterTimeRemaining;
+	private String auxOn;
+	private String airOn;
+	private String lightOn;
+	private String waterOn;
+	
+	/**
+	 * TODO
+	 */
+	public GroBots(){
+		this.name = "****DefaultBot****";
+		this.id = (long) this.name.hashCode();
+	}
+	
+	public GroBots(String name, byte[] add, String owner){
+		this.name = name;
+		this.macAddress = add;
+		this.id = (long) this.macAddress.hashCode();
+		this.ownerEmail = owner;
+	}
+	
+	/**
+	 * TODO
+	 * @param sched
+	 */
+	public void runSchedule(Schedule sched){
+		this.currentSchedule = sched;
+		//an http request will automatically use the "currentSchedule" as data for the GroBot to read.
+	}
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	public long getId(){
+		return this.id;
+	}
+	
+	/**
+	 * TODO
+	 * @return
+	 */
+	public Boolean isWaterOn(){
+		return false;
+	}
+	
+	/**
+	 * TODO
+	 * @return
+	 */
+	public Boolean areLightsOn(){
+		return false;
+	}
+	
+	/**
+	 * TODO
+	 * @return
+	 */
+	public Boolean isAirOn(){
+		return false;
+	}
+	
+	public Schedule getCurrentSchedule(){
+		return this.currentSchedule;
+	}
+	
+	
+	
+	
+	
+	///////////////////////
 	public String getLightTimeRemaining() {
 		return lightTimeRemaining;
 	}
@@ -74,72 +145,5 @@ public class GroBots {
 
 	public void setWaterOn(String waterOn) {
 		this.waterOn = waterOn;
-	}
-
-	private String waterTimeRemaining;
-	private String auxOn;
-	private String airOn;
-	private String lightOn;
-	private String waterOn;
-	
-	/**
-	 * TODO
-	 */
-	public GroBots(){
-		this.name = "****DefaultBot****";
-		this.id = (long) this.name.hashCode();
-	}
-	
-	public GroBots(String name, byte[] add, String owner){
-		this.name = name;
-		this.macAddress = add;
-		this.id = (long) this.macAddress.hashCode();
-		this.ownerEmail = owner;
-	}
-	
-	/**
-	 * TODO
-	 * @param sched
-	 */
-	public void runSchedule(Schedule sched){
-		sched.upPopularity();
-		this.currentSchedule = sched;
-		//an http request will automatically use the "currentSchedule" as data for the GroBot to read.
-	}
-	
-	public String getName(){
-		return this.name;
-	}
-	
-	public long getId(){
-		return this.id;
-	}
-	
-	/**
-	 * TODO
-	 * @return
-	 */
-	public Boolean isWaterOn(){
-		return false;
-	}
-	
-	/**
-	 * TODO
-	 * @return
-	 */
-	public Boolean areLightsOn(){
-		return false;
-	}
-	
-	/**
-	 * TODO
-	 * @return
-	 */
-	public Boolean isAirOn(){
-		return false;
-	}
-	
-	public Schedule getCurrentSchedule(){
-		return this.currentSchedule;
 	}
 }

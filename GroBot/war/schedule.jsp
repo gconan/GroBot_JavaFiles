@@ -92,60 +92,60 @@
 						<label class="description" for="lightsOn">Turn Lights on at: </label>
 							<select class="element select small" id="lightsOn" name="lightsOn"> 
 								<option value="" selected="selected"></option>
-								<option value="0:am" >12am</option>
-								<option value="1:am" >1am</option>
-								<option value="2:am" >2am</option>
-								<option value="3:am" >3am</option>
-								<option value="4:am" >4am</option>
-								<option value="5:am" >5am</option>
-								<option value="6:am" >6am</option>
-								<option value="7:am" >7am</option>
-								<option value="8:am" >8am</option>
-								<option value="9:am" >9am</option>
-								<option value="10:am" >10am</option>
-								<option value="11:am" >11am</option>
-								<option value="12:pm" >12pm</option>
-								<option value="1:pm" >1pm</option>
-								<option value="2:pm" >2pm</option>
-								<option value="3:pm" >3pm</option>
-								<option value="4:pm" >4pm</option>
-								<option value="5:pm" >5pm</option>
-								<option value="6:pm" >6pm</option>
-								<option value="7:pm" >7pm</option>
-								<option value="8:pm" >8pm</option>
-								<option value="9:pm" >9pm</option>
-								<option value="10:pm" >10pm</option>
-								<option value="11:pm" >11pm</option>
+								<option value="0" >12am</option>
+								<option value="100" >1am</option>
+								<option value="200" >2am</option>
+								<option value="300" >3am</option>
+								<option value="400" >4am</option>
+								<option value="500" >5am</option>
+								<option value="600" >6am</option>
+								<option value="700" >7am</option>
+								<option value="800" >8am</option>
+								<option value="900" >9am</option>
+								<option value="1000" >10am</option>
+								<option value="1100" >11am</option>
+								<option value="1200" >12pm</option>
+								<option value="1300" >1pm</option>
+								<option value="1400" >2pm</option>
+								<option value="1500" >3pm</option>
+								<option value="1600" >4pm</option>
+								<option value="1700" >5pm</option>
+								<option value="1800" >6pm</option>
+								<option value="1900" >7pm</option>
+								<option value="2000" >8pm</option>
+								<option value="2100" >9pm</option>
+								<option value="2200" >10pm</option>
+								<option value="2300" >11pm</option>
 							</select>
 						</div> 
 					<div class="row">
 						<label class="description" for="lightsOff">Turn Lights off at: </label>
 							<select class="element select small" id="lightsOff" name="lightsOff"> 
 								<option value="" selected="selected"></option>
-								<option value="0:am" >12am</option>
-								<option value="1:am" >1am</option>
-								<option value="2:am" >2am</option>
-								<option value="3:am" >3am</option>
-								<option value="4:am" >4am</option>
-								<option value="5:am" >5am</option>
-								<option value="6:am" >6am</option>
-								<option value="7:am" >7am</option>
-								<option value="8:am" >8am</option>
-								<option value="9:am" >9am</option>
-								<option value="10:am" >10am</option>
-								<option value="11:am" >11am</option>
-								<option value="12:pm" >12pm</option>
-								<option value="1:pm" >1pm</option>
-								<option value="2:pm" >2pm</option>
-								<option value="3:pm" >3pm</option>
-								<option value="4:pm" >4pm</option>
-								<option value="5:pm" >5pm</option>
-								<option value="6:pm" >6pm</option>
-								<option value="7:pm" >7pm</option>
-								<option value="8:pm" >8pm</option>
-								<option value="9:pm" >9pm</option>
-								<option value="10:pm" >10pm</option>
-								<option value="11:pm" >11pm</option>
+								<option value="0" >12am</option>
+								<option value="100" >1am</option>
+								<option value="200" >2am</option>
+								<option value="300" >3am</option>
+								<option value="400" >4am</option>
+								<option value="500" >5am</option>
+								<option value="600" >6am</option>
+								<option value="700" >7am</option>
+								<option value="800" >8am</option>
+								<option value="900" >9am</option>
+								<option value="1000" >10am</option>
+								<option value="1100" >11am</option>
+								<option value="1200" >12pm</option>
+								<option value="1300" >1pm</option>
+								<option value="1400" >2pm</option>
+								<option value="1500" >3pm</option>
+								<option value="1600" >4pm</option>
+								<option value="1700" >5pm</option>
+								<option value="1800" >6pm</option>
+								<option value="1900" >7pm</option>
+								<option value="2000" >8pm</option>
+								<option value="2100" >9pm</option>
+								<option value="2200" >10pm</option>
+								<option value="2300" >11pm</option>
 
 							</select>
 						</div>

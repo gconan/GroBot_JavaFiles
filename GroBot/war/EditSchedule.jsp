@@ -55,7 +55,7 @@
 		        	<div id="menu">
 							<ul>
 							<li><a href="welcome.jsp">Welcome</a></li>
-							<li class="current_page_item"><a href="#">New Schedule</a></li>
+							<li><a href="schedule.jsp">New Schedule</a></li>
 							<li><a href="status.jsp">Status</a></li>
 							<li><a href="profile.jsp">Profile</a></li>
 							<li><a href="/logout">Logout</a></li>

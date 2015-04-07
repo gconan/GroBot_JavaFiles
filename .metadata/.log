@@ -8270,3 +8270,86 @@ Navigate to the console view for "Datanucleus Enhancer" for more information
 !ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-06 17:50:19.468
 !MESSAGE Analytics ping response: 200: OK
 GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 17:59:26.274
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:04:42.845
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:04:49.904
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:12:27.158
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:13:52.175
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:20:00.221
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:20:38.443
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:23:18.015
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-06 18:23:30.612
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-07 09:48:13.740
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:48:13.860
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:48:13.860
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:48:13.905
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-07 09:49:34.552
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-07 09:52:24.475
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:52:24.584
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:52:24.584
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:52:24.629
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-07 09:54:35.573
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-07 09:55:22.324
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:55:22.473
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:55:22.474
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 09:55:22.518
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;

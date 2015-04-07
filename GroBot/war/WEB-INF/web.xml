@@ -28,6 +28,28 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>grow</servlet-name>
+		<servlet-class>groBot.servlet.GrowNowServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>grow</servlet-name>
+		<url-pattern>/growNow</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editSchedule</servlet-name>
+		<servlet-class>groBot.servlet.EditScheduleServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>editSchedule</servlet-name>
+		<url-pattern>/editSched</url-pattern>
+	</servlet-mapping>
+
+
+	
+	<servlet>
 		<servlet-name>addBot</servlet-name>
 		<servlet-class>groBot.servlet.AddGroBotServlet</servlet-class>
 	</servlet>
