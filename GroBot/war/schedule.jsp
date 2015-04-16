@@ -1,5 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page language="java" contentType="text/html; charset=US-ASCII" pageEncoding="US-ASCII" %>
+<%@ page import="groBot.dao.UserDAO" %>
+<%@ page import="groBot.entity.User" %>
+<%@ page import="groBot.entity.Schedule" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page session="true" %>
 
@@ -29,6 +33,126 @@
 			        window.location.assign("/index.html")
 			    }else{
 			    }
+			}
+
+
+			function checkLightTimes(){
+				 var onTime = parseInt(document.forms["scheduleForm"]["lightsOn"].value);
+				 var offTime = parseInt(document.forms["scheduleForm"]["lightsOff"].value);
+				 var valid;
+
+				 if(offTime==-1 || onTime==-1){
+				 	if(onTime==-1){
+				 		alert("Please select a time to turn on the lights");
+				 		document.getElementById("lightsonlabel").style.color = "red";
+				 		valid=false;
+					 }else if(offTime==-1){
+					 	alert("Please select a time to turn off the lights");
+					 	document.getElementById("lightsofflabel").style.color = "red";
+					 	valid=false;
+					 }
+				 }else{
+					 if(onTime >= offTime){
+					 	alert("Your light \"on\" time must be less than the light \"off\" time.");
+					 	document.getElementById("lightsonlabel").style.color = "red";
+					 	document.getElementById("lightsofflabel").style.color = "red";
+					 	valid=false;
+					 }else{
+					 	valid=true;
+					 }
+				 } 
+				 return valid;
+			}
+
+			function checkWater(){
+				var waterDur = parseInt(document.forms["scheduleForm"]["waterLength"].value);
+				var waterPer = parseInt(document.forms["scheduleForm"]["waterPeriod"].value);
+
+				if(waterDur==-1){
+					alert("Water duration cannot be empty.");
+					document.getElementById("waterdurlabel").style.color = "red";
+					return false;
+				}else if(waterPer==-1){
+					alert("Water frequency cannot be empty.");
+					document.getElementById("waterperlabel").style.color = "red";
+					return false;
+				}else if(waterDur==waterPer*60){
+					if(confirm("This water setting will keep the water on continuously. Do you want to continue?")){
+						return true;
+					}
+					document.getElementById("waterdurlabel").style.color = "red";
+					document.getElementById("waterperlabel").style.color = "red";
+					return false;
+				}
+				return true;
+
+			}
+
+			function checkNotNullEntries(){
+				var set1 = document.getElementById("set1").checked;
+				var set2 = document.getElementById("set2").checked;
+				var aux = document.getElementsByName("Aux");
+				var air = document.getElementsByName("Air");
+
+			    if(!(set1 || set2)||(!(aux[0].checked || aux[1].checked))||(!(air[0].checked || air[1].checked))){
+			    	
+			    	if(!(set1 || set2)){
+						alert("Please select a combination of light sets to use.");
+						document.getElementById("set1label").style.color = "red";
+						document.getElementById("set2label").style.color = "red";
+						return false;
+					}else if(!(aux[0].checked || aux[1].checked)){
+						alert("Please select a setting for the auxillary port.");
+						document.getElementById("auxonlabel").style.color = "red";
+						document.getElementById("auxofflabel").style.color = "red";
+						return false;
+					}else if(!(air[0].checked || air[1].checked)){
+						alert("Please select a setting for the air port.");
+						document.getElementById("aironlabel").style.color = "red";
+						document.getElementById("airofflabel").style.color = "red";
+						return false;
+					}
+				}else{
+					return true;
+				}
+			}
+		
+			function checkName(){
+				var name = document.forms["scheduleForm"]["scheduleName"].value;
+				if(name==null || name==""){
+					if (confirm("Are you sure want to leave the name null?")) {
+						return true;
+					}else{
+						document.getElementById("namelabel").style.color = "red";
+						return false;
+					}
+				}else{
+					return true;
+				}
+
+			}
+
+			function validateForm(){
+				document.getElementById("namelabel").style.color = "black";
+				document.getElementById("lightsonlabel").style.color = "black";
+			 	document.getElementById("lightsofflabel").style.color = "black";
+				document.getElementById("waterdurlabel").style.color = "black";
+				document.getElementById("waterperlabel").style.color = "black";
+				document.getElementById("set1label").style.color = "black";
+				document.getElementById("set2label").style.color = "black";
+				document.getElementById("aironlabel").style.color = "black";
+				document.getElementById("airofflabel").style.color = "black";
+				document.getElementById("auxonlabel").style.color = "black";
+				document.getElementById("auxofflabel").style.color = "black";
+				if(checkName()){
+					if(checkLightTimes()){
+						if(checkWater()){
+							if(checkNotNullEntries()){
+								document.getElementById("scheduleForm").submit();
+							}
+						}
+					}
+				}
 			}
 		</script>
 	</head>
@@ -73,14 +197,16 @@
 			<br>
 			<%
 				String email = (String)session.getAttribute("GroBotEmail");
+				ArrayList<Long> scheds = (UserDAO.INSTANCE.getUserByEmail(email)).getSchedules();
+				String size = ""+(scheds.size()+1);
 			%>
 			<div id="formBox">
-			<form action="/newSchedule" method="post" >
-				<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(email)}"/>
+			<form id="scheduleForm" action="/newSchedule" method="post">
+				<input type="hidden" name="size" value="${fn:escapeXml(size)}"/>
 				<h2>New Custom Schedule</h2>
 				<p>Please fill out each section to complete your new schedule.</p>					
 				<div class="row">
-					<label class="description" for="scheduleName">Name </label>
+					<label id="namelabel" class="description" for="scheduleName">*Name </label>
 					<input id="scheduleName" name="scheduleName" class="element text medium" type="text" maxlength="255" value=""/> 
 				</div> 
 							
@@ -89,9 +215,9 @@
 						<p></p>
 					</div>
 					<div class="row">
-						<label class="description" for="lightsOn">Turn Lights on at: </label>
+						<label id="lightsonlabel" class="description" for="lightsOn">*Turn Lights on at: </label>
 							<select class="element select small" id="lightsOn" name="lightsOn"> 
-								<option value="" selected="selected"></option>
+								<option value="-1" selected="selected"></option>
 								<option value="0" >12am</option>
 								<option value="100" >1am</option>
 								<option value="200" >2am</option>
@@ -119,9 +245,9 @@
 							</select>
 						</div> 
 					<div class="row">
-						<label class="description" for="lightsOff">Turn Lights off at: </label>
+						<label id="lightsofflabel" class="description" for="lightsOff">*Turn Lights off at: </label>
 							<select class="element select small" id="lightsOff" name="lightsOff"> 
-								<option value="" selected="selected"></option>
+								<option value="-1" selected="selected"></option>
 								<option value="0" >12am</option>
 								<option value="100" >1am</option>
 								<option value="200" >2am</option>
@@ -150,18 +276,18 @@
 							</select>
 						</div>
 					<div class="row">
-						<Legend>Power Light Set(s):</Legend><br>
-									<label for="set1">Vegitative Lights</label><input value="true" id="set1" name="set1" type="checkbox"><br><br>
- 									<label for="set2">Flowering Lights</label><input value="true" id="set2" name="set2" type="checkbox"> <br><br>
+						<Legend>*Power Light Set(s):</Legend><br>
+									<label id="set1label" for="set1">Vegitative Lights</label><input value="true" id="set1" name="set1" type="checkbox"><br><br>
+ 									<label id="set2label" for="set2">Flowering Lights</label><input value="true" id="set2" name="set2" type="checkbox"> <br><br>
 					</div>
 					<div id="section_break">
 						<h1>Water</h1>
 						<p></p>
 					</div>
 					<div class="row">
-					<label class="description" for="waterLength">Turn Water on for: </label>
+					<label id="waterdurlabel" class="description" for="waterLength">*Turn Water on for: </label>
 							<select class="element select small" id="waterLength" name="waterLength"> 
-								<option value="" selected="selected"></option>
+								<option value="-1" selected="selected"></option>
 								<option value="15" >15 minutes</option>
 								<option value="30" >30 minutes</option>
 								<option value="60" >60 minutes</option>
@@ -169,9 +295,9 @@
 							</select>
 						</div>
 					<div class="row">
-						<label class="description" for="waterPeriod">Every: </label>
+						<label id="waterperlabel" class="description" for="waterPeriod">*Every: </label>
 							<select class="element select small" id="waterPeriod" name="waterPeriod"> 
-								<option value="" selected="selected"></option>
+								<option value="-1" selected="selected"></option>
 								<option value="1" >1 hour</option>
 								<option value="2" >2 hours</option>
 								<option value="3" >3 hours</option>
@@ -186,23 +312,23 @@
 						<p></p>
 					</div>
 					<div class="row">
-							<legend>Auxiliary Port</legend><br>
-									<label for="AuxOn">On</label><input value="On" id="AuxOn" name="Aux" type="radio">
- 									<label for="AuxOff">Off</label><input value="Off" id="AuxOff" name="Aux" type="radio">
+							<legend>*Auxiliary Port</legend><br>
+									<label id="auxonlabel" for="AuxOn">On</label><input value="On" id="AuxOn" name="Aux" type="radio">
+ 									<label id="auxofflabel" for="AuxOff">Off</label><input value="Off" id="AuxOff" name="Aux" type="radio">
 					</div>
 					<br>
 					<div id="section_break">
 					</div>
 					<div class="row">
-							<legend>Air Pump</legend><br>
-									<label for="AirOn">On</label><input value="On" id="AirOn" name="Air" type="radio">
- 									<label for="AirOff">Off</label><input value="Off" id="AirOff" name="Air" type="radio">
+							<legend>*Air Pump</legend><br>
+									<label id="aironlabel" for="AirOn">On</label><input value="On" id="AirOn" name="Air" type="radio">
+ 									<label id="airofflabel" for="AirOff">Off</label><input value="Off" id="AirOff" name="Air" type="radio">
 					</div>
 					<br>
 					<br>
 					<br>
 					<center>
-						<input class="btn" type="submit" name="submit" value="Save Scedule" />
+						<button class="btn" type="button" onclick="validateForm()">Save Scedule</button>
 					</center>
 			</form>	
 		</div>

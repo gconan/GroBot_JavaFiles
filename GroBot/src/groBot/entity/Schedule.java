@@ -23,6 +23,7 @@ public class Schedule {
 	@Index
 	private Water waterSchedule;
 	
+	@Index
 	private int popularity;
 	
 	@Id
@@ -124,15 +125,6 @@ public class Schedule {
 		return UserDAO.INSTANCE.getSchedule(long1);
 	}
 	
-//	public void updateID(){
-//		long temp = this.scheduleID;
-//		if(temp==0){
-//			this.scheduleID = ((this.waterSchedule.getId()+this.lightSchedule.getId())*31+this.name.hashCode()*31);
-//			this.waterSchedule.setSchedule(this.scheduleID);
-//			this.lightSchedule.setSchedule(this.scheduleID);
-//		}else{return;}
-//	}
-
 	public String getLightOn() {
 		return ""+this.lightSchedule.getOnTime();
 	}
@@ -175,6 +167,11 @@ public class Schedule {
 	public void setWaterSchedule(int wlength, int wperiod) {
 		this.waterSchedule.setDuration(wlength);
 		this.waterSchedule.setPeriod(wperiod);
+		
+	}
+
+	public void setID(long hashCode) {
+		this.scheduleID = hashCode;
 		
 	}
 }

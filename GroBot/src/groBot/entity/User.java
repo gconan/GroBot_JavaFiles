@@ -28,7 +28,11 @@ public class User implements Serializable{
 	
 	private String lastName;
 	
+	@Index
 	private GroBots currentBot;
+	
+	@Index
+	private String currentBotName;
 	
 	private ArrayList<GroBots> myBots;
 	
@@ -62,13 +66,14 @@ public class User implements Serializable{
 		
 		this.myBots = new ArrayList<GroBots>();
 		this.currentBot = new GroBots();
+		this.currentBotName = currentBot.getName();
 		this.customSchedules = new ArrayList<Long>();
 		addDefaultSchedules();
 	}
 	
 	private void addDefaultSchedules() {
 		Schedule cayenne = new Schedule("Cayenne Peppers");
-		Schedule tomatoes = new Schedule("Tomatoes Peppers");
+		Schedule tomatoes = new Schedule("Tomatoes");
 		Schedule habanero = new Schedule("Habanero Peppers");
 		
 		cayenne.newLights(600, 1800, true, true);
@@ -77,6 +82,7 @@ public class User implements Serializable{
 		cayenne.setAux(false);
 		cayenne.setWaterID();
 		cayenne.setLightID();
+		cayenne.setID((long)(this.email+"Cayenne Peppers").hashCode());
 		
 		tomatoes.newLights(700, 1600, true, false);
 		tomatoes.newWaterSchedule(15, 1);
@@ -84,6 +90,7 @@ public class User implements Serializable{
 		tomatoes.setAux(false);
 		tomatoes.setWaterID();
 		tomatoes.setLightID();
+		tomatoes.setID((long)(this.email+"Tomatoes").hashCode());
 		
 		habanero.newLights(600, 1800, true, true);
 		habanero.newWaterSchedule(15, 6);
@@ -91,6 +98,7 @@ public class User implements Serializable{
 		habanero.setAux(false);
 		habanero.setWaterID();
 		habanero.setLightID();
+		habanero.setID((long)(this.email+"Habanero Peppers").hashCode());
 		
 		this.customSchedules.add(cayenne.id());
 		this.customSchedules.add(tomatoes.id());
@@ -158,10 +166,10 @@ public class User implements Serializable{
 	}
 	
 	public void addGroBot(GroBots bot){
+		if(this.myBots==null)this.myBots = new ArrayList<GroBots>();
 		this.myBots.add(bot);
 		this.currentBot = bot;
-		UserDAO.INSTANCE.addGroBot(bot);
-		UserDAO.INSTANCE.addUser(this);
+		this.currentBotName = bot.getName();
 	}
 	
 	
@@ -241,6 +249,10 @@ public class User implements Serializable{
 		}
 		
 		this.customSchedules.add(index, s.id());
+	}
+	
+	public String getCurrentBotName(){
+		return this.currentBotName;
 	}
 
 	public void removeSchedule(Long id) {

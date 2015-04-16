@@ -83,6 +83,7 @@
 							if(session.getAttribute("GroBotEmail") != null){
 								String emailadd = (String)session.getAttribute("GroBotEmail");
 								ArrayList<Long> scheds = (UserDAO.INSTANCE.getUserByEmail(emailadd)).getSchedules();
+								String size = ""+(scheds.size()+1);
 								ArrayList<Schedule> schedules = new ArrayList<Schedule>();
 								
 								for(int i=0; i<scheds.size(); i++){
@@ -91,7 +92,7 @@
 						%>
 							<div style="margin: 120px 15px 15px 0px;"><br><h2>Edit Your Schedules</h2><br>
 								<form action="/editSched" method="post">
-										<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(emailadd)}"/>
+										<input type="hidden" name="size" value="${fn:escapeXml(size)}"/>
 										<select name="schedule">
 											<%
 												for(int i=0; i<schedules.size(); i++){
@@ -113,7 +114,7 @@
 									<p>
 										<div style="margin: 120px 15px 15px 0px;"><br><h2>Add a New GroBot</h2><br>
 											<form action="/addGB" method="post">
-												<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(email)}"/>
+												<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(em)}"/>
 													MacAddress: <br><input type="text" name="mac" id="mac" /><br><br>
 													Name Your GroBot: <br><input type="text" name="nameofbot" id="nameofbot"/>
 												

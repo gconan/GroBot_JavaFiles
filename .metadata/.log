@@ -8752,3 +8752,1340 @@ Navigate to the console view for "Datanucleus Enhancer" for more information
 !ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-07 12:24:13.777
 !MESSAGE Analytics ping response: 200: OK
 GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-07 14:42:41.644
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-07 14:47:51.269
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-07 14:53:46.970
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-07 14:55:20.794
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 10:27:12.059
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:27:14.119
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:27:14.120
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:27:14.168
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 10:30:36.566
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:30:36.680
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:30:36.680
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:30:36.719
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 10:33:56.896
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:33:57.002
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:33:57.003
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:33:57.050
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 10:38:02.957
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:38:03.068
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:38:03.068
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:38:03.113
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 10:41:16.332
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:41:16.452
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:41:16.453
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 10:41:16.497
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 11:03:50.963
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:03:51.131
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:03:51.131
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:03:51.383
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 11:40:23.869
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:40:24.327
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:40:24.327
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:40:24.372
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 11:42:47.512
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:42:47.619
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:42:47.619
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 11:42:47.895
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 12:00:30.718
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 12:00:30.861
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 12:00:30.861
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 12:00:30.905
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 12:05:53.375
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 12:05:53.514
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 12:05:53.680
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 12:05:53.726
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 17:08:34.956
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:08:35.111
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:08:35.111
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:08:35.227
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:14:56.550
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:15:40.495
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 17:16:28.861
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:16:28.969
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:16:28.969
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:16:29.091
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 17:25:59.041
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:25:59.152
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:25:59.152
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:25:59.270
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:31:24.867
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:31:30.838
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:32:56.769
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 17:34:02.485
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:34:02.592
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:34:02.593
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:34:02.710
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:42:46.325
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:42:57.910
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:43:05.878
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:43:53.471
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:44:04.686
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:45:32.503
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:45:41.517
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:47:25.292
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:47:29.344
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 17:49:09.984
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:49:10.086
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:49:10.287
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:49:10.406
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:56:08.449
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:58:41.040
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 17:58:53.408
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-09 17:59:55.927
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:59:56.040
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:59:56.040
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-09 17:59:56.162
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 18:03:09.007
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 18:03:22.195
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 18:03:35.323
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-09 18:07:06.756
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.gwt.eclipse.core 4 0 2015-04-12 13:52:47.967
+!MESSAGE Could not stop source viewer server.
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.initLogging(JettyServer.java:40)
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.<clinit>(JettyServer.java:30)
+	at com.google.gwt.eclipse.core.GWTPlugin.stop(GWTPlugin.java:147)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Logging bundle must not be null.
+	at org.eclipse.core.internal.runtime.Log.<init>(Log.java:30)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:351)
+	at org.eclipse.core.runtime.Platform.getLog(Platform.java:1017)
+	at com.google.gdt.eclipse.platform.jetty.JettyEclipseLogger.<clinit>(JettyEclipseLogger.java:35)
+	... 20 more
+!SESSION 2015-04-15 13:25:07.633 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product -keyring /Users/conangammel/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product -data /Users/conangammel/Desktop/GroBot/GroBotRepo/GroBot_JavaFiles --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product -keyring /Users/conangammel/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-04-15 13:25:16.678
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 0 2015-04-15 13:25:38.519
+!MESSAGE While loading class "com.google.gdt.eclipse.suite.preferences.GdtPreferences", thread "Thread[Worker-2,5,main]" timed out waiting (5006ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "com.google.gdt.eclipse.suite_3.8.0.v201410302155-rel-r44 [553]". To avoid deadlock, thread "Thread[Worker-2,5,main]" is proceeding but "com.google.gdt.eclipse.suite.preferences.GdtPreferences" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.google.gdt.eclipse.suite"; type="osgi.bundle"; version:Version="3.8.0.v201410302155-rel-r44"; singleton:="true" [id=553] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.google.gdt.eclipse.suite.ext.update.FeatureUpdateManager.checkForUpdates(FeatureUpdateManager.java:105)
+	at com.google.gdt.eclipse.suite.ext.builders.UpdateTriggerCompilationParticipant.isActive(UpdateTriggerCompilationParticipant.java:40)
+	at org.eclipse.jdt.internal.core.JavaModelManager$CompilationParticipants.getCompilationParticipants(JavaModelManager.java:344)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:589)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:169)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2015-04-15 13:25:43.530
+!MESSAGE While loading class "com.google.gdt.eclipse.suite.GdtPlugin", thread "Thread[Worker-2,5,main]" timed out waiting (5003ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "com.google.gdt.eclipse.suite_3.8.0.v201410302155-rel-r44 [553]". To avoid deadlock, thread "Thread[Worker-2,5,main]" is proceeding but "com.google.gdt.eclipse.suite.GdtPlugin" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.google.gdt.eclipse.suite"; type="osgi.bundle"; version:Version="3.8.0.v201410302155-rel-r44"; singleton:="true" [id=553] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.google.gdt.eclipse.suite.ext.update.UpdateSiteURLGenerator.computeCompositeUpdateSiteURL(UpdateSiteURLGenerator.java:195)
+	at com.google.gdt.eclipse.suite.ext.update.UpdateSiteURLGenerator.generateURL(UpdateSiteURLGenerator.java:145)
+	at com.google.gdt.eclipse.suite.ext.update.FeatureUpdateManager.createDownloadJob(FeatureUpdateManager.java:150)
+	at com.google.gdt.eclipse.suite.ext.update.FeatureUpdateManager.checkForUpdates(FeatureUpdateManager.java:138)
+	at com.google.gdt.eclipse.suite.ext.builders.UpdateTriggerCompilationParticipant.isActive(UpdateTriggerCompilationParticipant.java:40)
+	at org.eclipse.jdt.internal.core.JavaModelManager$CompilationParticipants.getCompilationParticipants(JavaModelManager.java:344)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:589)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:169)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 13:48:40.041
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 13:48:45.208
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 13:50:03.380
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:50:03.732
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:50:03.733
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:50:03.872
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 13:52:13.711
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 13:53:11.933
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 13:54:05.685
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:54:05.905
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:54:05.906
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:54:06.024
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 13:58:21.555
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:58:21.688
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:58:21.689
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 13:58:21.878
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:00:41.067
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:04:59.540
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 14:06:04.135
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:06:04.287
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:06:04.288
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:06:04.405
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:08:26.092
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 14:09:27.677
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:09:27.835
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:09:27.836
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:09:27.915
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE A conflict occurred for COMMAND+SHIFT+\:
+Binding(COMMAND+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6d12a3b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c62ca4b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE A conflict occurred for COMMAND+SHIFT+P:
+Binding(COMMAND+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@62b8afc1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72b64cd1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE A conflict occurred for COMMAND+I:
+Binding(COMMAND+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b1ada89,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@679f5191,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(COMMAND+I,
+	ParameterizedCommand(Command(org.eclipse.ui.file.properties,Properties,
+		Display the properties of the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c7ef5bc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE A conflict occurred for COMMAND+O:
+Binding(COMMAND+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50017ee4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1231d3c5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE A conflict occurred for COMMAND+/:
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54633d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7204b839,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE A conflict occurred for COMMAND+SHIFT+C:
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54633d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2ae2e321,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-15 14:15:40.344
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F:
+Binding(COMMAND+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@43f5ac9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11e105a1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:18:50.509
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:18:54.065
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 14:19:57.932
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:19:58.071
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:19:58.072
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:19:58.188
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:23:02.324
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 14:23:55.745
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:23:55.863
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:23:55.863
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:23:55.943
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:48:34.683
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:49:37.563
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:49:54.245
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:51:52.545
+!MESSAGE Unable to update app: Failed to compile the generated JSP java files.
+
+See the deployment console for more details
+!STACK 0
+com.google.appengine.tools.admin.AdminException: Unable to update app: Failed to compile the generated JSP java files.
+	at com.google.appengine.tools.admin.AppAdminImpl.doUpdate(AppAdminImpl.java:480)
+	at com.google.appengine.tools.admin.AppAdminImpl.update(AppAdminImpl.java:55)
+	at com.google.appengine.eclipse.core.proxy.AppEngineBridgeImpl.deploy(AppEngineBridgeImpl.java:433)
+	at com.google.appengine.eclipse.core.deploy.DeployProjectJob.runInWorkspace(DeployProjectJob.java:158)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.google.appengine.tools.admin.JspCompilationException: Failed to compile the generated JSP java files.
+	at com.google.appengine.tools.admin.Application.compileJavaFiles(Application.java:845)
+	at com.google.appengine.tools.admin.Application.compileJsps(Application.java:806)
+	at com.google.appengine.tools.admin.Application.createStagingDirectory(Application.java:620)
+	at com.google.appengine.tools.admin.AppAdminImpl.doUpdate(AppAdminImpl.java:472)
+	... 5 more
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:52:42.608
+!MESSAGE Unable to update app: Failed to compile the generated JSP java files.
+
+See the deployment console for more details
+!STACK 0
+com.google.appengine.tools.admin.AdminException: Unable to update app: Failed to compile the generated JSP java files.
+	at com.google.appengine.tools.admin.AppAdminImpl.doUpdate(AppAdminImpl.java:480)
+	at com.google.appengine.tools.admin.AppAdminImpl.update(AppAdminImpl.java:55)
+	at com.google.appengine.eclipse.core.proxy.AppEngineBridgeImpl.deploy(AppEngineBridgeImpl.java:433)
+	at com.google.appengine.eclipse.core.deploy.DeployProjectJob.runInWorkspace(DeployProjectJob.java:158)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.google.appengine.tools.admin.JspCompilationException: Failed to compile the generated JSP java files.
+	at com.google.appengine.tools.admin.Application.compileJavaFiles(Application.java:845)
+	at com.google.appengine.tools.admin.Application.compileJsps(Application.java:806)
+	at com.google.appengine.tools.admin.Application.createStagingDirectory(Application.java:620)
+	at com.google.appengine.tools.admin.AppAdminImpl.doUpdate(AppAdminImpl.java:472)
+	... 5 more
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:53:36.955
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:54:12.424
+!MESSAGE Unable to update app: Failed to compile the generated JSP java files.
+
+See the deployment console for more details
+!STACK 0
+com.google.appengine.tools.admin.AdminException: Unable to update app: Failed to compile the generated JSP java files.
+	at com.google.appengine.tools.admin.AppAdminImpl.doUpdate(AppAdminImpl.java:480)
+	at com.google.appengine.tools.admin.AppAdminImpl.update(AppAdminImpl.java:55)
+	at com.google.appengine.eclipse.core.proxy.AppEngineBridgeImpl.deploy(AppEngineBridgeImpl.java:433)
+	at com.google.appengine.eclipse.core.deploy.DeployProjectJob.runInWorkspace(DeployProjectJob.java:158)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.google.appengine.tools.admin.JspCompilationException: Failed to compile the generated JSP java files.
+	at com.google.appengine.tools.admin.Application.compileJavaFiles(Application.java:845)
+	at com.google.appengine.tools.admin.Application.compileJsps(Application.java:806)
+	at com.google.appengine.tools.admin.Application.createStagingDirectory(Application.java:620)
+	at com.google.appengine.tools.admin.AppAdminImpl.doUpdate(AppAdminImpl.java:472)
+	... 5 more
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 14:56:36.661
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:56:36.814
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:56:36.814
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 14:56:36.950
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:59:10.513
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:59:16.712
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:59:42.417
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-15 14:59:44.988
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 15:00:39.810
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 15:00:39.931
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 15:00:39.931
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 15:00:40.009
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 17:27:51.975
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:27:52.249
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:27:52.249
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:27:52.369
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 17:32:26.303
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:32:26.431
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:32:26.432
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:32:26.512
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2015-04-15 17:34:35.927
+!MESSAGE GroBot successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:34:36.123
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.7.0 and GAE 1.9.17, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=E0E78596007272540BF734716FE282E164F18C61, ea=DEPLOY_GAE, cid=1411592019121, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1411592019121&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gwtv=2.7.0&gaev=1.9.17&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=E0E78596007272540BF734716FE282E164F18C61&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1411592019121, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:34:36.124
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.7.0%20and%20GAE%201.9.17&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=E0E78596007272540BF734716FE282E164F18C61&ea=DEPLOY_GAE&cid=1411592019121&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1411592019121%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gwtv%3D2.7.0%26gaev%3D1.9.17%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DE0E78596007272540BF734716FE282E164F18C61%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1411592019121&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2015-04-15 17:34:36.557
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.gwt.eclipse.core 4 0 2015-04-16 10:01:10.799
+!MESSAGE Could not stop source viewer server.
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.initLogging(JettyServer.java:40)
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.<clinit>(JettyServer.java:30)
+	at com.google.gwt.eclipse.core.GWTPlugin.stop(GWTPlugin.java:147)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Logging bundle must not be null.
+	at org.eclipse.core.internal.runtime.Log.<init>(Log.java:30)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:351)
+	at org.eclipse.core.runtime.Platform.getLog(Platform.java:1017)
+	at com.google.gdt.eclipse.platform.jetty.JettyEclipseLogger.<clinit>(JettyEclipseLogger.java:35)
+	... 20 more
+!SESSION 2015-04-16 11:05:53.733 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product -keyring /Users/conangammel/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product -data /Users/conangammel/Desktop/GroBot/GroBotRepo/GroBot_JavaFiles --launche.library ../../../plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140603-1326 -product org.eclipse.epp.package.standard.product -keyring /Users/conangammel/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-04-16 11:06:23.728
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE A conflict occurred for COMMAND+SHIFT+\:
+Binding(COMMAND+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b66827e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4abd765b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE A conflict occurred for COMMAND+SHIFT+P:
+Binding(COMMAND+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@69519e44,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@251732a2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE A conflict occurred for COMMAND+I:
+Binding(COMMAND+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53fb80d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@192705a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(COMMAND+I,
+	ParameterizedCommand(Command(org.eclipse.ui.file.properties,Properties,
+		Display the properties of the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4300ee2b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE A conflict occurred for COMMAND+O:
+Binding(COMMAND+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24c602c3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@43df6311,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE A conflict occurred for COMMAND+/:
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7ee113e6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6731212,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE A conflict occurred for COMMAND+SHIFT+C:
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7ee113e6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5da05f56,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-04-16 11:07:21.429
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F:
+Binding(COMMAND+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ae1a21d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(COMMAND+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45e8b527,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:26.377
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer.hasValidSdk(AutoEnhancer.java:204)
+	at com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer.build(AutoEnhancer.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:26.378
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:26.493
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.gdt.eclipse.core.validators.AbstractProjectValidator.validateSdk(AbstractProjectValidator.java:133)
+	at com.google.appengine.eclipse.core.validators.GaeProjectValidator.build(GaeProjectValidator.java:171)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:26.493
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:27.073
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.validators.java.GaeChecker.check(GaeChecker.java:237)
+	at com.google.appengine.eclipse.core.validators.java.GaeChecker.check(GaeChecker.java:227)
+	at com.google.appengine.eclipse.core.validators.java.GaeChecker.check(GaeChecker.java:219)
+	at com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant.doValidateCompilationUnit(JavaCompilationParticipant.java:112)
+	at com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant.validateCompilationUnit(JavaCompilationParticipant.java:103)
+	at com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant.reconcile(JavaCompilationParticipant.java:193)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:258)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:245)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:95)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:27.073
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:28.518
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.computeExpectedJavaAgentVMArgument(JavaAgentArgumentProcessor.java:66)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.update(JavaAgentArgumentProcessor.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigurationUpdater.update(LaunchConfigurationUpdater.java:153)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.syncUpdate(LaunchConfigAffectingChangesListener.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.access$2(LaunchConfigAffectingChangesListener.java:89)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener$1.runInWorkspace(LaunchConfigAffectingChangesListener.java:78)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:28.518
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:29.426
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.computeExpectedJavaAgentVMArgument(JavaAgentArgumentProcessor.java:66)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.update(JavaAgentArgumentProcessor.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigurationUpdater.update(LaunchConfigurationUpdater.java:153)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.syncUpdate(LaunchConfigAffectingChangesListener.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.access$2(LaunchConfigAffectingChangesListener.java:89)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener$1.runInWorkspace(LaunchConfigAffectingChangesListener.java:78)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:29.426
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:29.527
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.computeExpectedJavaAgentVMArgument(JavaAgentArgumentProcessor.java:66)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.update(JavaAgentArgumentProcessor.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigurationUpdater.update(LaunchConfigurationUpdater.java:153)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.syncUpdate(LaunchConfigAffectingChangesListener.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.access$2(LaunchConfigAffectingChangesListener.java:89)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener$1.runInWorkspace(LaunchConfigAffectingChangesListener.java:78)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:29.527
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:29.628
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.computeExpectedJavaAgentVMArgument(JavaAgentArgumentProcessor.java:66)
+	at com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor.update(JavaAgentArgumentProcessor.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigurationUpdater.update(LaunchConfigurationUpdater.java:153)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.syncUpdate(LaunchConfigAffectingChangesListener.java:93)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.access$2(LaunchConfigAffectingChangesListener.java:89)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener$1.runInWorkspace(LaunchConfigAffectingChangesListener.java:78)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:07:29.628
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:11.182
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer.hasValidSdk(AutoEnhancer.java:204)
+	at com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer.build(AutoEnhancer.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:11.182
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:11.188
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.gdt.eclipse.core.validators.AbstractProjectValidator.validateSdk(AbstractProjectValidator.java:133)
+	at com.google.appengine.eclipse.core.validators.GaeProjectValidator.build(GaeProjectValidator.java:171)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:11.188
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:17.418
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.validators.java.GaeChecker.check(GaeChecker.java:237)
+	at com.google.appengine.eclipse.core.validators.java.GaeChecker.check(GaeChecker.java:227)
+	at com.google.appengine.eclipse.core.validators.java.GaeChecker.check(GaeChecker.java:219)
+	at com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant.doValidateCompilationUnit(JavaCompilationParticipant.java:112)
+	at com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant.validateCompilationUnit(JavaCompilationParticipant.java:103)
+	at com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant.reconcile(JavaCompilationParticipant.java:193)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:258)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:245)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:95)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:17.418
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:22.970
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer.hasValidSdk(AutoEnhancer.java:204)
+	at com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer.build(AutoEnhancer.java:126)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:22.970
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:22.974
+!MESSAGE GAE SDK /GroBot/war/WEB-INF failed validation
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK directory '/GroBot/war/WEB-INF' does not exist
+	at com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory.getAppEngineBridge(AppEngineBridgeFactory.java:81)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.getAppEngineBridge(GaeSdk.java:325)
+	at com.google.appengine.eclipse.core.sdk.GaeSdk.validate(GaeSdk.java:498)
+	at com.google.gdt.eclipse.core.validators.AbstractProjectValidator.validateSdk(AbstractProjectValidator.java:133)
+	at com.google.appengine.eclipse.core.validators.GaeProjectValidator.build(GaeProjectValidator.java:171)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.google.appengine.eclipse.core 4 0 2015-04-16 11:08:22.974
+!MESSAGE SDK directory '/GroBot/war/WEB-INF' does not exist
+
+!ENTRY com.google.gwt.eclipse.core 4 0 2015-04-16 11:08:44.731
+!MESSAGE Could not stop source viewer server.
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.initLogging(JettyServer.java:40)
+	at com.google.gdt.eclipse.platform.jetty.JettyServer.<clinit>(JettyServer.java:30)
+	at com.google.gwt.eclipse.core.GWTPlugin.stop(GWTPlugin.java:147)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Logging bundle must not be null.
+	at org.eclipse.core.internal.runtime.Log.<init>(Log.java:30)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:351)
+	at org.eclipse.core.runtime.Platform.getLog(Platform.java:1017)
+	at com.google.gdt.eclipse.platform.jetty.JettyEclipseLogger.<clinit>(JettyEclipseLogger.java:35)
+	... 20 more

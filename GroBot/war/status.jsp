@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page language="java" contentType="text/html; charset=US-ASCII" pageEncoding="US-ASCII" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ page import="groBot.dao.UserDAO" %>
 <%@ page session="true" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -59,7 +60,7 @@
 					if(session.getAttribute("GroBotEmail") != null){
 						String em = (String)session.getAttribute("GroBotEmail");
 						String name = (String)session.getAttribute("name");
-						String botName = (String)session.getAttribute("botName");
+						String botName = UserDAO.INSTANCE.getBotNameByOwner(em);
 					}
 				%>
 				

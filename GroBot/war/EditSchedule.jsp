@@ -30,6 +30,124 @@
 			    }else{
 			    }
 			}
+			function checkLightTimes(){
+				 var onTime = parseInt(document.forms["scheduleForm"]["lightsOn"].value);
+				 var offTime = parseInt(document.forms["scheduleForm"]["lightsOff"].value);
+				 var valid;
+
+				 if(offTime==-1 || onTime==-1){
+				 	if(onTime==-1){
+				 		alert("Please select a time to turn on the lights");
+				 		document.getElementById("lightsonlabel").style.color = "red";
+				 		valid=false;
+					 }else if(offTime==-1){
+					 	alert("Please select a time to turn off the lights");
+					 	document.getElementById("lightsofflabel").style.color = "red";
+					 	valid=false;
+					 }
+				 }else{
+					 if(onTime >= offTime){
+					 	alert("Your light \"on\" time must be less than the light \"off\" time.");
+					 	document.getElementById("lightsonlabel").style.color = "red";
+					 	document.getElementById("lightsofflabel").style.color = "red";
+					 	valid=false;
+					 }else{
+					 	valid=true;
+					 }
+				 } 
+				 return valid;
+			}
+
+			function checkWater(){
+				var waterDur = parseInt(document.forms["scheduleForm"]["waterLength"].value);
+				var waterPer = parseInt(document.forms["scheduleForm"]["waterPeriod"].value);
+
+				if(waterDur==-1){
+					alert("Water duration cannot be empty.");
+					document.getElementById("waterdurlabel").style.color = "red";
+					return false;
+				}else if(waterPer==-1){
+					alert("Water frequency cannot be empty.");
+					document.getElementById("waterperlabel").style.color = "red";
+					return false;
+				}else if(waterDur==waterPer*60){
+					if(confirm("This water setting will keep the water on continuously. Do you want to continue?")){
+						return true;
+					}
+					document.getElementById("waterdurlabel").style.color = "red";
+					document.getElementById("waterperlabel").style.color = "red";
+					return false;
+				}
+				return true;
+
+			}
+
+			function checkNotNullEntries(){
+				var set1 = document.getElementById("set1").checked;
+				var set2 = document.getElementById("set2").checked;
+				var aux = document.getElementsByName("Aux");
+				var air = document.getElementsByName("Air");
+
+			    if(!(set1 || set2)||(!(aux[0].checked || aux[1].checked))||(!(air[0].checked || air[1].checked))){
+			    	
+			    	if(!(set1 || set2)){
+						alert("Please select a combination of light sets to use.");
+						document.getElementById("set1label").style.color = "red";
+						document.getElementById("set2label").style.color = "red";
+						return false;
+					}else if(!(aux[0].checked || aux[1].checked)){
+						alert("Please select a setting for the auxillary port.");
+						document.getElementById("auxonlabel").style.color = "red";
+						document.getElementById("auxofflabel").style.color = "red";
+						return false;
+					}else if(!(air[0].checked || air[1].checked)){
+						alert("Please select a setting for the air port.");
+						document.getElementById("aironlabel").style.color = "red";
+						document.getElementById("airofflabel").style.color = "red";
+						return false;
+					}
+				}else{
+					return true;
+				}
+			}
+		
+			function checkName(){
+				var name = document.forms["scheduleForm"]["scheduleName"].value;
+				if(name==null || name==""){
+					if (confirm("Are you sure want to leave the name null?")) {
+						return true;
+					}else{
+						document.getElementById("namelabel").style.color = "red";
+						return false;
+					}
+				}else{
+					return true;
+				}
+
+			}
+
+			function validateForm(){
+				document.getElementById("namelabel").style.color = "black";
+				document.getElementById("lightsonlabel").style.color = "black";
+			 	document.getElementById("lightsofflabel").style.color = "black";
+				document.getElementById("waterdurlabel").style.color = "black";
+				document.getElementById("waterperlabel").style.color = "black";
+				document.getElementById("set1label").style.color = "black";
+				document.getElementById("set2label").style.color = "black";
+				document.getElementById("aironlabel").style.color = "black";
+				document.getElementById("airofflabel").style.color = "black";
+				document.getElementById("auxonlabel").style.color = "black";
+				document.getElementById("auxofflabel").style.color = "black";
+				if(checkName()){
+					if(checkLightTimes()){
+						if(checkWater()){
+							if(checkNotNullEntries()){
+								document.getElementById("scheduleForm").submit();
+							}
+						}
+					}
+				}
+			}
 		</script>
 	</head>
 		<script>

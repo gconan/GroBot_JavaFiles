@@ -103,6 +103,11 @@ public enum UserDAO {
     	User fromDB = ofy().load().type(User.class).filter("accessCode", accessCode).first().now();
     	return fromDB;
     }
+    
+    public String getBotNameByOwner(String email){
+    	User fromDB = ofy().load().type(User.class).id(email).now();
+    	return fromDB.getCurrentBotName();
+    }
 
 	/**
 	 * Deletes the user's Grobots, the user's schedules (which includes lights and water since those are stored too)

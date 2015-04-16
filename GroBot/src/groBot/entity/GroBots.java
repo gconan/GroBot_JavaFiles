@@ -17,8 +17,9 @@ public class GroBots {
 	@Id
 	private Long id;
 	
-	private byte[] macAddress;
+	private String macAddress;
 	
+	@Index
 	private String name;
 	
 	@Index
@@ -42,7 +43,7 @@ public class GroBots {
 		this.id = (long) this.name.hashCode();
 	}
 	
-	public GroBots(String name, byte[] add, String owner){
+	public GroBots(String name,String add, String owner){
 		this.name = name;
 		this.macAddress = add;
 		this.id = (long) this.macAddress.hashCode();

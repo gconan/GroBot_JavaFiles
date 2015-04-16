@@ -62,7 +62,7 @@
 					if(session.getAttribute("GroBotEmail") != null){
 						String em = (String)session.getAttribute("GroBotEmail");
 						String name = (String)session.getAttribute("name");
-						String botName = (String)session.getAttribute("botName");
+						String botName = UserDAO.INSTANCE.getBotNameByOwner(em);
 						ArrayList<Long> scheds = (UserDAO.INSTANCE.getUserByEmail(em)).getSchedules();
 						ArrayList<Schedule> schedules = new ArrayList<Schedule>();
 						
@@ -89,8 +89,6 @@
 												for(int i=0; i<schedules.size(); i++){
 													pageContext.setAttribute("value", schedules.get(i).getValue());
 													pageContext.setAttribute("sName", schedules.get(i).getName());
-													//String value = schedules.get(i).getValue();
-													//String sName = schedules.get(i).getName();
 												%>
 													<option value="${fn:escapeXml(value)}">${fn:escapeXml(sName)}</option>
 												<%
