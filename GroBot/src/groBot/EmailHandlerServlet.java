@@ -1,6 +1,3 @@
-/**
- * @author Ken
- */
 package groBot;
 
 import java.io.IOException;

@@ -11,13 +11,16 @@ import javax.servlet.http.HttpSession;
 
 
 /**
- * 
- * @author namaz
+ * Loggs the user out of the website.
+ * @author conangammel
  *
  */
 public class LogoutServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-        
+       
+    /**
+     * Deletes a user's cookie, invalidates the HTML session, and redirects them to the login page.
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         Cookie[] cookies = request.getCookies();

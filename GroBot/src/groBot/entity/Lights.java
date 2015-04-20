@@ -6,36 +6,51 @@ import com.googlecode.objectify.annotation.Index;
 
 /**
  * This class represents the light bulb sockets and their timings
- * HardCoded - number of sockets, final int that can be changed if more or less sockets
  * There are on and off times for the lights that we will send to the Microcontroller to switch power
- * The Boolean array is for which light sockets are on/off
+ * Different sets of lights are determined by the int lightPins (see member documentation)
  * @author conangammel
  *
  */
 @Entity
 public class Lights {
 	
-	/**time to turn on 0645 = 6:45am*/
+	/**Time the lights turn on. In military time*/
 	private int onTime;
 	
-	/**time to turn on 13:45 = 13*60min + 45 = 1:45pm*/
+	/**Time the lights turn off. In military time*/
 	private int offTime;
 	
-	/**on/off for each set of three lights*/
+	/**Numerical representation of the two light ports.
+	 * 00 maps to both off.
+	 * 01 maps to pin1 off and pin2 on.
+	 * 02 maps to pin1 on and pin2 off.
+	 * 03 maps to both pins on.*/
 	private int lightPins;
 	
+	/**Objectify ID*/
 	@Id
 	private Long id;
 	
+	/**ID of the Schedule that the lights belong to
+	 * @see Schedule
+	 */
 	@Index
 	private long sched_id;
 	
+	/**Default constructor for Objectify (required for storing).*/
 	public Lights(){
 		this.offTime = 0;
 		this.onTime = 0;
 		this.lightPins = 0;		
 	}
 	
+	/**
+	 * Constructor used by this package only. This is used by the addNewScheduleServlet.
+	 * @param onT - on time of the lights
+	 * @param offT - off time of the lights
+	 * @param pin1 - pin1 boolean true=on false=off
+	 * @param pin2 - pin2 boolean true=on false=off
+	 */
 	protected Lights(int onT, int offT, Boolean pin1, Boolean pin2){
 		this.onTime = onT;
 		this.offTime = offT;
@@ -43,6 +58,15 @@ public class Lights {
 		this.id = (long) this.offTime*this.onTime*31;
 	}
 
+	/**
+	 * This method takes in the light pin booleans and converts it to an integer.
+	 * @param pin1 - pin1 boolean true=on false=off
+	 * @param pin2 - pin2 boolean true=on false=off
+	 * @return Integer - 00 for both off.
+	 * 01 for pin1 off and pin2 on.
+	 * 02 for pin1 on and pin2 off.
+	 * 03 for both pins on.
+	 */
 	private int convertBooleantoInt(Boolean pin1, Boolean pin2) {
 		if(!pin1 && !pin2){
 			return 0;
@@ -56,40 +80,79 @@ public class Lights {
 		return 0;
 	}
 	
+	/**
+	 * Returns the integer representing the light pins.
+	 * @return Which pins are on according to: 00 for both off.
+	 * 01 for pin1 off and pin2 on.
+	 * 02 for pin1 on and pin2 off.
+	 * 03 for both pins on.
+	 */
 	public int getLightPins(){
 		return this.lightPins;
 	}
 	
+	/**
+	 * Return the Objectify ID.
+	 * @return long - Objectofy ID
+	 */
 	public long getId(){
 		return this.id;
 	}
 	
+	/**
+	 * Return the time the lights should turn on.
+	 * @return int - the time the lights should turn on (in military time)
+	 */
 	public int getOnTime(){
 		return this.onTime;
 	}
 	
+	/**
+	 * Set the Objectify ID.
+	 */
 	public void setID(){
 		this.id = (this.sched_id*31)^3;
 	}
 	
+	/**
+	 * Return the time the lights should turn off.
+	 * @return int - the time the lights should turn off (in military time)
+	 */
 	public int getOffTime(){
 		return this.offTime;
 	}
 	
+	/**
+	 * Set the ID of the schedule this lightSchedule is associated with.
+	 * @param id_of_schedule
+	 */
 	public void setSchedule(long id_of_schedule){
 		this.sched_id = id_of_schedule;
 	}
 
+	/**
+	 * Set the light on time.
+	 * @param lightsOnTime - in military time
+	 */
 	public void setLOn(int lightsOnTime) {
 		this.onTime = lightsOnTime;
 		
 	}
 
+	/**
+	 * Set the light off time.
+	 * @param lightsOffTime - in militarty time
+	 */
 	public void setLOff(int lightsOffTime) {
 		this.offTime = lightsOffTime;
 		
 	}
 
+	/**
+	 * Set which light pins are turned on or off.
+	 * @param s1
+	 * @param s2
+	 */
 	public void setPins(boolean s1, boolean s2) {
 		this.lightPins = this.convertBooleantoInt(s1, s2);
 	}

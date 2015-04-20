@@ -52,17 +52,12 @@ h1, h2, h3 {
 #titleBox {
 	
 	height: auto;
-	width: 50%;
+	width: 100%;
 	align-content:center;
 	margin:auto;
 	border: 3px solid;
-    border-radius: 25px;
     border-color: green;
-    
-    background: -webkit-linear-gradient(right, green, yellow , red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right,  green, yellow , red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, green, yellow , red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right,  green, yellow , red); /* Standard syntax (must be last) */
+	background: url(images/grass5.jpg) no-repeat left top;
 }
 
 #titleBoxX {
@@ -164,11 +159,16 @@ a {
 	width: 40%;
 	margin: 0px;
 	padding: 0px 30% 0px 30%;
-	color: #000000;
+	color: #cb0005;
+    -webkit-animation: mymove 6s infinite;
+    animation: mymove 6s infinite;
 	background: ;
 }
 
 #logo h1, #logo p {
+	color: #cb0005;
+    -webkit-animation: mymove 6s infinite;
+    animation: mymove 6s infinite;
 }
 
 #logo h1 {
@@ -179,9 +179,24 @@ a {
 	font-size: 3.6em;
 }
 
+
 #logo h1 a {
 	font-family: 'Arvo', serif;
-	color: #000000;
+	color: yellow;
+    -webkit-animation: mymove 6s infinite;
+    animation: mymove 6s infinite;
+}
+
+@-webkit-keyframes mymove {
+    00% {color: #cb0005;}
+	33% {color: yellow;}
+    66% {color: #0c6400;}
+}
+
+@keyframes mymove {
+	00% {color: #cb0005;}
+	33% {color: yellow;}
+    66% {color: #0c6400;}
 }
 
 #logo p {
@@ -192,18 +207,25 @@ a {
 	text-align: center;
 	font-family: 'Arvo', serif;
 	font-size: 10px;
-	color: #000000;
+	font-weight: bold;
+	color: #cb0005;
+    -webkit-animation: mymove 6s infinite;
+    animation: mymove 6s infinite;
 }
 
 #logo p a {
-	color: #000000;
+	color: red;
+    -webkit-animation: mymove 6s infinite;
+    animation: mymove 6s infinite;
 }
 
 #logo a {
 	border: none;
 	background: none;
 	text-decoration: none;
-	color: #000000;
+	color: red;
+    -webkit-animation: mymove 6s infinite;
+    animation: mymove 6s infinite;
 }
 
 /* Menu */

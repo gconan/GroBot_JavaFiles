@@ -9,8 +9,17 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Deletes a schedule from the DataStore.
+ * @author conangammel
+ *
+ */
 public class DeleteScheduleServlet extends SecureServlet {
 	
+	/**
+	 * Reads the ID from the HTML form, then deletes the schedule from the user's list of schedules and from the DataStore. Then
+	 * it saves the updated user.
+	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		super.doPost(req, resp);
 		if(email == null) return;

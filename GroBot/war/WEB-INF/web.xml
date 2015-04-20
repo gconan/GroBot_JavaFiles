@@ -28,6 +28,16 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>connectToBot</servlet-name>
+		<servlet-class>groBot.servlet.ConnectToNewBotServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>connectToBot</servlet-name>
+		<url-pattern>/changeBot</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>deleteSchedule</servlet-name>
 		<servlet-class>groBot.servlet.DeleteScheduleServlet</servlet-class>
 	</servlet>

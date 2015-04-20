@@ -1,0 +1,11 @@
+groBot
+groBot.client
+groBot.dao
+groBot.email
+groBot.entity
+groBot.server
+groBot.services
+groBot.servlet
+groBot.servlet.test
+groBot.shared
+groBotFULLTEST

@@ -76,15 +76,15 @@
 			  		<div id="content">
 					
 							<br>
-						  <span class="welcometext">Hello ${fn:escapeXml(name)}, Welcome to GroBot!</span>
+						  <h1 class="welcometext">Hello ${fn:escapeXml(name)}, Welcome to GroBot!</h1>
 							<div style="height:200px; overflow: hidden">
 								
 								<br>
-								<h2>Currently connected to: ${fn:escapeXml(botName)}</h2>
+								<h2>Currently connected to:</h2><h2 style="color:green"> ${fn:escapeXml(botName)}</h2>
 								<p>
 									<form action="/growNow" method="post">
 										<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(em)}"/>
-										<select name="schedule">
+										<select name="schedule" autofocus>
 											<%
 												for(int i=0; i<schedules.size(); i++){
 													pageContext.setAttribute("value", schedules.get(i).getValue());

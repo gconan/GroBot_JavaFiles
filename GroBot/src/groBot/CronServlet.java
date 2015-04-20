@@ -1,7 +1,3 @@
-/**
- * emails daily updates to users
- * @author Ken
- */
 
 package groBot;
 

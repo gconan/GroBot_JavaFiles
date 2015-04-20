@@ -207,7 +207,7 @@
 				<p>Please fill out each section to complete your new schedule.</p>					
 				<div class="row">
 					<label id="namelabel" class="description" for="scheduleName">*Name </label>
-					<input id="scheduleName" name="scheduleName" class="element text medium" type="text" maxlength="255" value=""/> 
+					<input id="scheduleName" name="scheduleName" class="element text medium" type="text" maxlength="255" value="" autofocus/> 
 				</div> 
 							
 					<div id="section_break">
@@ -304,6 +304,9 @@
 								<option value="4" >4 hours</option>
 								<option value="5" >5 hours</option>
 								<option value="6" >6 hours</option>
+								<option value="7" >7 hours</option>
+								<option value="8" >8 hours</option>
+								<option value="9" >9 hours</option>
 
 							</select>
 						</div> 

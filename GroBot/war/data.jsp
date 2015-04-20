@@ -11,14 +11,28 @@
 		String waterPer = (String)session.getAttribute("waterPer");
 		String aux = (String)session.getAttribute("aux");
 		String air = (String)session.getAttribute("air");
+		String mac = (String)session.getAttribute("mac");
+		String bid = (String)session.getAttribute("bot");
 	%>
-	<body>
-		${fn:escapeXml(lightOn)}
-		${fn:escapeXml(lightOff)}
-		${fn:escapeXml(lightPins)}
-		${fn:escapeXml(waterDur)}
-		${fn:escapeXml(waterPer)}
-		${fn:escapeXml(aux)}
-		${fn:escapeXml(air)}
+
+		<body>
+		<%if(bid==null){%>
+			null id
+		<%}else if(bid.equals("")){%>
+			empty id
+		<%}else{%>
+			something else
+		<%}%>
+	
+		<br>
+		mac = ${fn:escapeXml(mac)}<br>
+		id = ${fn:escapeXml(bid)}<br>
+		lightOn = ${fn:escapeXml(lightOn)}<br>
+		lightOff = ${fn:escapeXml(lightOff)}<br>
+		lightPins = ${fn:escapeXml(lightPins)}<br>
+		waterDuration = ${fn:escapeXml(waterDur)}<br>
+		waterPeriod = ${fn:escapeXml(waterPer)}<br>
+		aux = ${fn:escapeXml(aux)}<br>
+		air = ${fn:escapeXml(air)}
 	</body>
 </html>

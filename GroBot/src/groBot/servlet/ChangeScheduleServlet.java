@@ -8,8 +8,16 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Saves edits made by the user to an exisiting schedule.
+ * @author conangammel
+ *
+ */
 public class ChangeScheduleServlet extends SecureServlet {
 	
+	/**
+	 * Reads all of the information from the HTML form and then makes any necessary changes to the schedule before saving it to the DataStore.
+	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		super.doPost(req, resp);
 		if(email == null) return;

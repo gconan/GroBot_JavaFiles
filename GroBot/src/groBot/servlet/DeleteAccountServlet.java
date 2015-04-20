@@ -10,12 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * 
+ * Deletes a user's accoutn and associated DataStore members.
  * @author conangammel
  *
  */
 public class DeleteAccountServlet extends SecureServlet {
 
+	/**
+	 * Deletes the cookie from the user's browser and the user's GroBots, Schedules, and the user from the DataStore.
+	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException{
 		super.doPost(req, resp);
 		if(email==null)return;

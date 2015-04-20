@@ -3,6 +3,7 @@
 <%@ page import="groBot.dao.UserDAO" %>
 <%@ page import="groBot.entity.User" %>
 <%@ page import="groBot.entity.Schedule" %>
+<%@ page import="groBot.entity.GroBots" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page session="true" %>
@@ -69,15 +70,39 @@
 							<div id="outsideR" style="height:1200px;"></div>
 					  		<div id="content" style="height:1200px;">
 								<br>
-<%
+				<%
 					if(session.getAttribute("GroBotEmail") != null){
 						String em = (String)session.getAttribute("GroBotEmail");
 						String name = (String)session.getAttribute("name");
 						String last = (String)session.getAttribute("last");
-
 					}%>
 						<h2>${fn:escapeXml(name)} ${fn:escapeXml(last)}</h2>
 						<br>
+
+						
+				<%
+					if(session.getAttribute("GroBotEmail") != null){
+							String emailadd1 = (String)session.getAttribute("GroBotEmail");
+							ArrayList<GroBots> bots = (UserDAO.INSTANCE.getUserByEmail(emailadd1)).getAllBots();
+					%>
+						<div style="margin: 120px 15px 15px 0px;"><br><h2>Connect To a Different GroBot</h2><br>
+
+								<form action="/changeBot" method="post">
+										<select name="botList" autofocus>
+											<%
+												for(int j=0; j<bots.size(); j++){
+													pageContext.setAttribute("botid", ""+(bots.get(j)).getId());
+													pageContext.setAttribute("bName", (bots.get(j)).getName());
+
+											%>		<option value="${fn:escapeXml(botid)}">${fn:escapeXml(bName)}</option>
+											<% } 
+										}
+											%>
+											
+									  	</select>
+										<input class="btn" type="submit" name="button" value="Connect Now!"/>
+									</form>
+							</div>
 
 						<%
 							if(session.getAttribute("GroBotEmail") != null){
@@ -98,8 +123,6 @@
 												for(int i=0; i<schedules.size(); i++){
 													pageContext.setAttribute("value", schedules.get(i).getValue());
 													pageContext.setAttribute("sName", schedules.get(i).getName());
-													//String value = schedules.get(i).getValue();
-													//String sName = schedules.get(i).getName();
 												%>
 													<option value="${fn:escapeXml(value)}">${fn:escapeXml(sName)}</option>
 												<%
@@ -130,7 +153,7 @@
 
 
 									<p>
-										<div style="margin: 120px 15px 15px 0px;"><br><h2>Want to change your password?</h2><br>
+										<div style="margin: 120px 15px 15px 0px;"><br><h2>Change Your Password</h2><br>
 											<form action="/changep" method="post">
 												Current Password: <input type="text" name="currPassw" id="currPassw" /><br>
 												New Password: <input type="password" name="newPassw" id="newPassw" /><br>

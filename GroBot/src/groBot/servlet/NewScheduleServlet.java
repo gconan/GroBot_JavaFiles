@@ -9,9 +9,18 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Creates a new custom schedule and assigns it to the user in the DataStore.
+ * @author conangammel
+ *
+ */
 public class NewScheduleServlet extends SecureServlet {
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * Reads the HTML form data, creates a new schedule, adds the schedule to the user's list of schedules, 
+	 * then saves the schedule and user into the DataStore.
+	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		super.doPost(req, resp);
 		if(email == null) return;

@@ -31,28 +31,19 @@ public class OfyService {
 		 factory().begin();
 	 }
  
+	/**
+	 * Singleton return.
+	 * @return
+	 */
 	public static Objectify ofy() {
-		
-	 return ObjectifyService.ofy();
-	 }
-	 
-	public static ObjectifyFactory factory() {
-	 return ObjectifyService.factory();
-	 }
-	
-	public static ArrayList<User> convertUserQuerytoArrayList(Query<User> list){
-		ArrayList<User> returnThis = new ArrayList<User>();
-		for(User u: list){
-			returnThis.add(u);
-		}
-		return returnThis;
+		return ObjectifyService.ofy();
 	}
-	
-	public static ArrayList<GroBots> convertMeetingQuerytoArrayList(Query<GroBots> list){
-		ArrayList<GroBots> returnThis = new ArrayList<GroBots>();
-		for(GroBots u: list){
-			returnThis.add(u);
-		}
-		return returnThis;
+	 
+	/**
+	 * Singleton return.
+	 * @return
+	 */
+	public static ObjectifyFactory factory() {
+		return ObjectifyService.factory();
 	}
 }

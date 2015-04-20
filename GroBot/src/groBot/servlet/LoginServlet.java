@@ -14,13 +14,17 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * 
+ * Logs a user into the website. Sets cookies, so that they may exit the website and return without logging back in.
  * @author conangammel
  *
  */
 public class LoginServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
+	/**
+	 * Verifies a user's email address and password, sets cookie information, current GroBot name, then redirects the user to
+	 * the welcome page.
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
  
         String email = request.getParameter("username").toLowerCase();

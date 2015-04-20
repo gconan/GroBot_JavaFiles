@@ -6,30 +6,46 @@ import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
 
+/**
+ * Object representation of a growing schedule.
+ * The data stored in a Schedule object drives the automation of the GroBot timings.
+ * @author conangammel
+ *
+ */
 @Entity
 public class Schedule {
 	
+	/**User given name for the schedule (ie. Chile Peppers)*/
 	private String name;
 	
+	/**Upper case version of name so that the options from HTML are all the same for comparing*/
 	private String value;
 	
+	/**True if the auxiliary port is on, false if it is off. No timings associated with the port, just on/off.*/
 	private Boolean auxPort;
 	
+	/**True if the air port is on, false if it is off. No timings associated with the port, just on/off.*/
 	private Boolean airStone;
 	
+	/**Light schedule that contains the pins and on/off times.*/
 	@Index
 	private Lights lightSchedule;
 	
+	/**Water schedule that contains the frequency and duration of watering times.*/
 	@Index
 	private Water waterSchedule;
 	
+	/**How often a user grows with this schedule. Orders a list for displaying the most popular schedules first on the website.*/
 	@Index
 	private int popularity;
 	
+	/**Objectify ID*/
 	@Id
 	private Long scheduleID;
 	
-	
+	/**
+	 * Default schedule for Objectify.
+	 */
 	protected Schedule(){
 //		this.name = "";
 //		this.value = "";
@@ -43,6 +59,10 @@ public class Schedule {
 //		this.lightSchedule.setSchedule(this.scheduleID);
 	}
 	
+	/**
+	 * Constructor: only sets the name. Expects that the remainder of the data members will be set using the set methods.
+	 * @param name - User given name for the schedule (ie. Chile Peppers)
+	 */
 	public Schedule(String name){
 		this.name = name;
 		this.value = this.name.toUpperCase();
@@ -53,47 +73,91 @@ public class Schedule {
 		this.scheduleID = (long)(this.name.hashCode()*31);
 	}
 	
-	public void setLights(Lights l){
-		this.lightSchedule = l;
+	/**
+	 * Set LightSchedule.
+	 * @param lights
+	 */
+	public void setLights(Lights lights){
+		this.lightSchedule = lights;
 	}
 	
-	public void setWater(Water w){
-		this.waterSchedule = w;
+	/**
+	 * Set WaterSchedule
+	 * @param water
+	 */
+	public void setWater(Water water){
+		this.waterSchedule = water;
 	}
 	
-	public void setName(String n){
-		this.name = n;
-		this.value = n.toUpperCase();
+	/**
+	 * Set the name of the schedule given by the user. This will only be used when the changes the name when editing the schedule.
+	 * @param name
+	 */
+	public void setName(String name){
+		this.name = name;
+		this.value = name.toUpperCase();
 	}
 	
+	/**
+	 * Returns a String representation of the Objectify ID.
+	 * @return String - ""+id
+	 */
 	public String getValue(){
 		return ""+this.id();
 	}
 	
-	public void setAux(boolean b){
-		this.auxPort = b;
+	/**
+	 * Set the auxiliary port.
+	 * @param aux - true=on false=off
+	 */
+	public void setAux(boolean aux){
+		this.auxPort = aux;
 	}
 	
-	public void setAir(boolean b){
-		this.airStone = b;
+	/**
+	 * Set the air port.
+	 * @param air - true=on false=off
+	 */
+	public void setAir(boolean air){
+		this.airStone = air;
 	}
 	
+	/**
+	 * Return the name of the Schedule.
+	 * @return the name of the schedule
+	 */
 	public String getName(){
 		return this.name;
 	}
 	
+	/**
+	 * Returns the popularity.
+	 * @return int - popularity
+	 */
 	public int getPopularity(){
 		return this.popularity;
 	}
 	
+	/**
+	 * Increment the popularity. Used when a user grows with this schedule.
+	 */
 	public void upPopularity(){
 		this.popularity+=1;
 	}
 	
+	/**
+	 * Return the schedule's Objectify ID
+	 * @return
+	 */
 	public long id(){
 		return this.scheduleID;
 	}
 	
+	/**
+	 * Creates a new water schedule using the parameters and then sets this Schedule's water schedule to the new one.
+	 * @param duration - length of time the water is on
+	 * @param period - how often the water turns on
+	 */
 	public void newWaterSchedule(int duration, int period){
 		this.waterSchedule = new Water();
 		this.waterSchedule.setDuration(duration);
@@ -101,75 +165,151 @@ public class Schedule {
 		this.waterSchedule.setSchedule(this.scheduleID);
 	}
 	
+	/**
+	 * Sets the water schedule's id. This is done after the water schedule is fully initialized so that the id is not zero.
+	 */
 	public void setWaterID(){
 		this.waterSchedule.setID();
 	}
+	
+	/**
+	 * Sets the light schedule's id. This is done after the light schedule is fully initialized so that the id is not zero.
+	 */
 	public void setLightID(){
 		this.lightSchedule.setID();
 	}
+	
+	/**
+	 * Returns the water schedule's Objectify ID
+	 * @return long - ID
+	 */
 	public long getWaterId(){
 		return this.waterSchedule.getId();
 	}
 	
+	/**
+	 * Returns the light schedule's Objectify ID
+	 * @return long - ID
+	 */
 	public long getLightId(){
 		return this.lightSchedule.getId();
 	}
 	
-	public void newLights(int lightsOnTime, int lightsOffTime, boolean s1, boolean s2){
-		this.lightSchedule = new Lights(lightsOnTime, lightsOffTime, s1, s2);
+	/**
+	 * Creates a new light schedule and sets the new schedule to this object's light schedule
+	 * @param lightsOnTime - time the lights turn on (in military time)
+	 * @param lightsOffTime - time the lights turn off (in military time)
+	 * @param pin1 - lights on pin one on/off
+	 * @param pin2 - lights on pin two on/off
+	 */
+	public void newLights(int lightsOnTime, int lightsOffTime, boolean pin1, boolean pin2){
+		this.lightSchedule = new Lights(lightsOnTime, lightsOffTime, pin1, pin2);
 		this.lightSchedule.setSchedule(this.scheduleID);
 
 	}
 	
-	public static Schedule get(Long long1) {
-		return UserDAO.INSTANCE.getSchedule(long1);
+	/**
+	 * Returns the Schedule stored in Objectify using the ID.
+	 * @param id
+	 * @return
+	 */
+	public static Schedule get(Long id) {
+		return UserDAO.INSTANCE.getSchedule(id);
 	}
 	
+	/**
+	 * Returns a String representation of the lights on time.
+	 * @return String - time the lights turn on
+	 */
 	public String getLightOn() {
 		return ""+this.lightSchedule.getOnTime();
 	}
 
+	/**
+	 * Returns a String representation of the lights off time.
+	 * @return String - time the lights turn off
+	 */
 	public String getLightOff() {
 		return ""+this.lightSchedule.getOffTime();
 	}
 	
+	/**
+	 * Returns the Objectify ID.
+	 * @return long - ID
+	 */
 	public long getId(){
 		return this.scheduleID;
 	}
 
+	/**
+	 * Returns a String representation of the lights pins.
+	 * @return String - which light pins are on
+	 */
 	public String getLightPins() {
 		return ""+this.lightSchedule.getLightPins();
 	}
 
+	/**
+	 * Returns a String representation of the water duration.
+	 * @return String - length of time the water pump is on
+	 */
 	public String getWaterDuration() {
 		return ""+this.waterSchedule.getWaterDuration();
 	}
 
+	/**
+	 * Returns a String representation of the water period.
+	 * @return String - how often the plants are watered
+	 */
 	public String getWaterPeriod() {
 		return ""+this.waterSchedule.getWaterPeriod();
 	}
 
+	/**
+	 * Returns a String representation whether the auxiliary port is on or off
+	 * @return "true" || "false"
+	 */
 	public String getAux() {
 		return ""+this.auxPort;
 	}
 
+	/**
+	 * Returns a String representation whether the air port is on or off
+	 * @return "true" || "false"
+	 */
 	public String getAir() {
 		return ""+this.airStone;
 	}
 
-	public void setLights(int lightsOnTime, int lightsOffTime, boolean s1, boolean s2) {
+	/**
+	 * Sets the light timing and pins for the light schedule. Used when a user edits his/her schedule.
+	 * @param lightsOnTime
+	 * @param lightsOffTime
+	 * @param pin1
+	 * @param pin2
+	 */
+	public void setLights(int lightsOnTime, int lightsOffTime, boolean pin1, boolean pin2) {
 		this.lightSchedule.setLOn(lightsOnTime);
 		this.lightSchedule.setLOff(lightsOffTime);
-		this.lightSchedule.setPins(s1,s2);
+		this.lightSchedule.setPins(pin1,pin2);
 		
 	}
 
+	/**
+	 * Sets the water duration and period for the water schedule. Used when a user edits his/her schedule.
+	 * @param wlength
+	 * @param wperiod
+	 */
 	public void setWaterSchedule(int wlength, int wperiod) {
 		this.waterSchedule.setDuration(wlength);
 		this.waterSchedule.setPeriod(wperiod);
 		
 	}
 
+	/**
+	 * Sets the Objectify ID of the schedule.
+	 * @param hashCode
+	 */
 	public void setID(long hashCode) {
 		this.scheduleID = hashCode;
 		

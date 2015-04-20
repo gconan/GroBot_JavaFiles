@@ -13,18 +13,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 
- * @author namaz
+ * Resets a user's password if he/she forgot his/her login password.
+ * @author conangammel
  *
  */
 public class ResetPasswordServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * Generates a temporary password and sends it to the email address provided.
+	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		String email = req.getParameter("email");
 		
 		// email field was left blank or not valid email
-		if (email == null || !email.endsWith("@utexas.edu")) {
+		if (email == null) {
 			resp.sendRedirect("/forgotpassword.html");
     		return;
 		}

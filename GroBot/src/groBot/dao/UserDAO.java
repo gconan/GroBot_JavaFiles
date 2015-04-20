@@ -7,15 +7,20 @@ import groBot.entity.Schedule;
 import groBot.entity.User;
 import groBot.entity.Water;
 
+/**
+ * UserDAO is the "middleMan" between code and the DataStore. 
+ * All of the INSTANCE methods pull or save Entities to and from Google's DataStore.
+ * @author conangammel
+ *
+ */
 public enum UserDAO {  
 	INSTANCE;
 	
 	
 	/**
-	 * GET USERS GROBOTS?
-	 * get items that belong to a specific user
+	 * Returns the GroBot the user is currently connected to.
 	 * @param email
-	 * @return List<Item>
+	 * @return currently connected GroBot
 	 */
 	public GroBots getUserBots(String email){
 		User user= getUserByEmail(email);
@@ -25,7 +30,7 @@ public enum UserDAO {
 	
 	
 	/**
-	 * adds user to database
+	 * Adds user to database. Acts as an overwrite as well (saves updated users).
 	 * @author conangammel
 	 * @param User
 	 * @return User
@@ -38,7 +43,7 @@ public enum UserDAO {
     }
     
     /**
-	 * removes user from database
+	 * Deletes the user from the DataStore.
 	 * @author conangammel
 	 * @param User
 	 * @return User
@@ -50,9 +55,9 @@ public enum UserDAO {
  
     
     /**
-	 * activates the status of user in database
+	 * Activates the user so he/she can login.
 	 * @author conangammel
-	 * @param User
+	 * @param user
 	 * @return User
 	 */
     public User activateUser(User user) {	
@@ -63,9 +68,10 @@ public enum UserDAO {
     }
     
     /**
-	 * updates user object in database with given password
-	 * @param String
-	 */
+     * Updates user's password in the DataStore.
+     * @param user
+     * @param newPassword
+     */
     public void setPassword(User user, String newPassword) {
     	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
     	fromDB.setPassword(newPassword);
@@ -73,8 +79,8 @@ public enum UserDAO {
     }
     
     /**
-	 * generates random password and updates user object in database with new password
-	 * @param User
+	 * Generates random password and updates user object in database with new password.
+	 * @param user
 	 */
     public void resetPassword(User user) {
     	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
@@ -83,9 +89,9 @@ public enum UserDAO {
     }
      
     /**
-	 * get user from database by email
+	 * Returns the User associated with the given email address.
 	 * @author conangammel
-	 * @param User
+	 * @param email
 	 * @return User
 	 */
     public User getUserByEmail(String email){
@@ -94,7 +100,7 @@ public enum UserDAO {
     }
     
     /**
-	 * get user from database by accessCode
+	 * Get user from DataStore using his/her accessCode
 	 * @author conangammel
 	 * @param User
 	 * @return User
@@ -104,6 +110,11 @@ public enum UserDAO {
     	return fromDB;
     }
     
+    /**
+     * Returns the name of the GroBot the user is connected to.
+     * @param email - address of user
+     * @return String - name of the GroBot the user is connected to
+     */
     public String getBotNameByOwner(String email){
     	User fromDB = ofy().load().type(User.class).id(email).now();
     	return fromDB.getCurrentBotName();
@@ -113,6 +124,7 @@ public enum UserDAO {
 	 * Deletes the user's Grobots, the user's schedules (which includes lights and water since those are stored too)
 	 * and finally the user is deleted. NOT REVERSIBLE
 	 * @author conangammel
+	 * @param email - address of user to be deleted
 	 */
 	public void deleteAccount(String email){
 		User fromDB = ofy().load().type(User.class).id(email).now();
@@ -137,34 +149,46 @@ public enum UserDAO {
 	}
 
 
-
-	public Schedule getSchedule(Long long1) {//TODO, make work
-		return ofy().load().type(Schedule.class).id(long1).now();
+	/**
+	 * Returns the schedule associated with the ID parameter passed.
+	 * @param id
+	 * @return Schedule
+	 */
+	public Schedule getSchedule(Long id) {
+		return ofy().load().type(Schedule.class).id(id).now();
 	}
 
-
-
+	/**
+	 * Add a Schedule to the DataStore. Also saves changes to existing Schedules.
+	 * @param sched
+	 */
 	public void addSchedule(Schedule sched) {
 		synchronized(this){
 			ofy().save().entity(sched).now();
 		}
-		
 	}
 
-
-
+	/**
+	 * Add a GroBot to the DataStore. Also saves changes to existing GroBots.
+	 * @param bot
+	 */
 	public void addGroBot(GroBots bot) {
 		ofy().save().entity(bot).now();
 	}
 
-
-
-	public GroBots getGroBot(int hashCode) {
-		return ofy().load().type(GroBots.class).id(hashCode).now();
+	/**
+	 * Returns a GroBot given the id.
+	 * @param id
+	 * @return GroBot
+	 */
+	public GroBots getGroBot(Long id) {
+		return ofy().load().type(GroBots.class).id(id).now();
 	}
 
-
-
+	/**
+	 * Deletes the schedule associated with the id.
+	 * @param id
+	 */
 	public void removeSchedule(Long id) {
 		ofy().delete().type(Schedule.class).id(id);
 	}

@@ -211,7 +211,7 @@
 				<p>Feel free to edit any part of your schedule.</p>					
 				<div class="row">
 					<label class="description" for="scheduleName">Name </label>
-					<input id="scheduleName" name="scheduleName" class="element text medium" type="text" maxlength="255" value="${fn:escapeXml(schedName)}"/> 
+					<input id="scheduleName" name="scheduleName" class="element text medium" type="text" maxlength="255" value="${fn:escapeXml(schedName)}" autofocus/> 
 				</div> 
 							
 					<div id="section_break">
@@ -546,6 +546,21 @@
 									%><option value="6" selected="selected">6 hours</option><%
 								}else{
 									%><option value="6" >6 hours</option><%
+								}
+								if(waterPer.equals("7")){
+									%><option value="7" selected="selected">7 hours</option><%
+								}else{
+									%><option value="7" >7 hours</option><%
+								}
+								if(waterPer.equals("8")){
+									%><option value="8" selected="selected">8 hours</option><%
+								}else{
+									%><option value="8" >8 hours</option><%
+								}
+								if(waterPer.equals("9")){
+									%><option value="9" selected="selected">9 hours</option><%
+								}else{
+									%><option value="9" >9 hours</option><%
 								}%>
 							</select>
 						</div> 

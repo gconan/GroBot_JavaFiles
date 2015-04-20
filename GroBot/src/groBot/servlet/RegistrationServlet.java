@@ -12,14 +12,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 
- * @author
+ * Registers a GroBot user.
+ * @author conangammel
  *
  */
 public class RegistrationServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * Reads the credentials from the HTML form, verifies that the passwords provided match, creates a new user, 
+	 * sends he/she a verification email, then saves the User to the DataStore.
+	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		
 		String first = req.getParameter("firstName");
@@ -87,6 +91,10 @@ public class RegistrationServlet extends HttpServlet{
     	}	
 	}
 	
+	/**
+	 * Activates a user. This method is called when the user clicks the link in his/her email to verify registration.
+	 * If the user is saved in the DataStore, then he/she is activated and saved, then redirected to the confirmation page.
+	 */
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 	    User user = UserDAO.INSTANCE.getUserByAccessCode(req.getParameter("access"));
 	    if (user == null) {

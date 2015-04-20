@@ -2,6 +2,8 @@
 <%@ page language="java" contentType="text/html; charset=US-ASCII" pageEncoding="US-ASCII" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page import="groBot.dao.UserDAO" %>
+<%@ page import="groBot.entity.Schedule" %>
+<%@ page import="groBot.entity.GroBots" %>
 <%@ page session="true" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -56,22 +58,97 @@
 							
 						</ul>
 					</div>
-				<%
-					if(session.getAttribute("GroBotEmail") != null){
-						String em = (String)session.getAttribute("GroBotEmail");
-						String name = (String)session.getAttribute("name");
-						String botName = UserDAO.INSTANCE.getBotNameByOwner(em);
-					}
-				%>
-				
 					<div id="outsideL"></div>
 					<div id="outsideR"></div>
 			  		<div id="content">
-							<div style="height:200px; overflow: hidden">
-								<br>
-								<h2>Current Status Of: ${fn:escapeXml(botName)}</h2>
-							</div>				
+			  			<%
+							if(session.getAttribute("GroBotEmail") != null){
+								String em = (String)session.getAttribute("GroBotEmail");
+								String name = (String)session.getAttribute("name");
+								GroBots bot = UserDAO.INSTANCE.getUserBots(em);
+								String botName = bot.getName();
+								Schedule sched = bot.getCurrentSchedule();
+								String sName = sched.getName();
+								pageContext.setAttribute("sname", sName);
 
+								String lightRemaining = "";
+								if(bot.getLightOn().equalsIgnoreCase("true")){
+									lightRemaining = bot.getLightTimeRemaining();
+								}
+
+								String waterRemaining = "";
+								if(bot.getWaterOn().equalsIgnoreCase("true")){
+									waterRemaining = bot.getWaterTimeRemaining();
+								}
+								
+								String aux = bot.getAuxOn();
+								String air = bot.getAirOn();
+						%>
+							<div style="height:600px; overflow: hidden">
+								<br>
+								<h2>Current Status Of: </h2><h3 style="color:green"> ${fn:escapeXml(botName)}</h3>
+								<br>
+								<br>
+								<h2>Schedule Running: </h2><h3 style="color:green"> ${fn:escapeXml(sname)}</h3>
+
+								<% 
+									if( lightRemaining.equals("") && waterRemaining.equals("") ){ 
+										//both off
+								%>
+										<p>
+											both off<br>
+											The lights will turn back on in ${fn:escapeXml(lightRemaining)} minutes.<br>
+											The water will turn back on in ${fn:escapeXml(waterRemaining)} minutes.<br>
+											The auxillary port status is: ${fn:escapeXml(aux)}<br>
+											The air pump status is: ${fn:escapeXml(air)}
+										</p>
+								<% 
+									}else if( lightRemaining.equals("") && !waterRemaining.equals("") ){ 
+										//light off, water on
+								%>
+										<p>
+											light off, water on<br>
+											The lights will turn back on in ${fn:escapeXml(lightRemaining)} more minutes.<br>
+											The water will be on for ${fn:escapeXml(waterRemaining)} more minutes.<br>
+											The auxillary port status is: ${fn:escapeXml(aux)}<br>
+											The air pump status is: ${fn:escapeXml(air)}
+										</p>
+								<% 
+									}else if( !lightRemaining.equals("") && waterRemaining.equals("") ){ 
+										//light on, water off
+								%>
+										<p>
+											light on, water off<br>
+											The lights will be on for ${fn:escapeXml(lightRemaining)} more minutes.<br>
+											The water will turn back on in ${fn:escapeXml(waterRemaining)} more minutes.<br>
+											The auxillary port status is: ${fn:escapeXml(aux)}<br>
+											The air pump status is: ${fn:escapeXml(air)}
+										</p>
+								<% 
+									}else if( !lightRemaining.equals("") && !waterRemaining.equals("") ){ 
+										//light and water on
+								%>
+										<p>
+											both on<br>
+											The lights will be on for ${fn:escapeXml(lightRemaining)} more minutes.<br>
+											The water will be on for ${fn:escapeXml(waterRemaining)} more minutes.<br>
+											The auxillary port status is: ${fn:escapeXml(aux)}<br>
+											The air pump status is: ${fn:escapeXml(air)}
+										</p>
+								<% 
+									}else{ 
+										//something bad happened
+								%>
+										<p>
+											UH OH!!!
+										</p>
+								<% 
+									}
+								%>
+							</div>				
+						<%
+							}
+						%>
 						
 					</div>
 		<div id="footer">

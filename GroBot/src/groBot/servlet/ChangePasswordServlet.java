@@ -11,13 +11,17 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * 
+ * Checks that the old password matches before changing the user's password.
  * @author conangammel
  *
  */
 public class ChangePasswordServlet extends SecureServlet {
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * Reads the old password, and the new password from the HTML form and verifies that the old password 
+	 * is correct and that the new password was entered correctly twice before changing the password.
+	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
 		super.doPost(req, resp);
