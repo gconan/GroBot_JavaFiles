@@ -38,7 +38,6 @@ public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOExc
 //update info into GroBot so that if the user goes to the "current status" page
 //the information will be updated
 		GroBots fromDB = UserDAO.INSTANCE.getGroBot(((long)mac.hashCode()));
-	
 		//update info
 		fromDB.setWaterTimeRemaining(waterTimeRemaining);
 		fromDB.setLightTimeRemaining(lightTimeRemaining);
@@ -54,11 +53,8 @@ public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOExc
 			//TODO anything?
 			
 		}else{
-			Long id = (long) Math.abs(mac.hashCode());//TODO remove
-			String bid = id.toString();//TODO remove
 			//set attributes for GroBot to update microcontroller
-			session.setAttribute("mac", mac);//TODO remove
-			session.setAttribute("bot", bid);//TODO remove
+			
 			session.setAttribute("lightOn", current.getLightOn());
 			session.setAttribute("lightOff", current.getLightOff());
 			session.setAttribute("lightPins", current.getLightPins());

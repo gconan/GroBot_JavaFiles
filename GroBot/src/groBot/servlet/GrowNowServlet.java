@@ -29,6 +29,7 @@ public class GrowNowServlet extends SecureServlet {
 		Schedule sched = UserDAO.INSTANCE.getSchedule(id);
 		sched.upPopularity();
 		user.getGroBot().runSchedule(sched);
+		user.orderScheduleList(id);
 		//TODO figure out how to maintain an ordered list for the schedules
 		//user.update
 		

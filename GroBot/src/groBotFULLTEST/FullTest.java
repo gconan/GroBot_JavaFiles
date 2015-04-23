@@ -1,11 +1,9 @@
 package groBotFULLTEST;
 
-import groBot.servlet.test.RegistrationServletTest;
-import groBot.servlet.test.SecureServletTest;
+import groBot.entity.test.*;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
 // by FYICenter.com
 
 
@@ -17,8 +15,11 @@ import org.junit.runners.Suite.SuiteClasses;
 
 // specify an array of test classes
 @Suite.SuiteClasses({
-  SecureServletTest.class,
-  RegistrationServletTest.class}
+  GroBotsTester.class,
+  WaterTester.class,
+  ScheduleTester.class,
+  UserTester.class,
+  LightsTester.class}
 )
 
 /**

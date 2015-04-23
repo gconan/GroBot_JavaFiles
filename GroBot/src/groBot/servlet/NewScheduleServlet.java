@@ -101,6 +101,7 @@ public class NewScheduleServlet extends SecureServlet {
 		sched.setLightID();
 		
 		user.addCustomSchedule(sched);
+		user.orderScheduleList(sched.getId());
 		
 		UserDAO.INSTANCE.addUser(user);
 		UserDAO.INSTANCE.addSchedule(sched);

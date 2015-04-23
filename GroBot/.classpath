@@ -76,5 +76,16 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER/appengine-java-sdk-1.9.17"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/easymock-3.3.1/easymock-3.3.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/easymock-3.3.1/easymock-3.3.1-samples.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/easymock-3.3.1/easymock-3.3.1-sources.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/easymock-3.3.1/easymock-3.3.1-tests.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/easymock-3.3.1/easymock-3.3.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/powermock-mockito-junit-1.6.2/cglib-nodep-2.2.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/powermock-mockito-junit-1.6.2/javassist-3.19.0-GA.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/powermock-mockito-junit-1.6.2/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/powermock-mockito-junit-1.6.2/mockito-all-1.10.19.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/powermock-mockito-junit-1.6.2/objenesis-2.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/powermock-mockito-junit-1.6.2/powermock-mockito-1.6.2-full.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

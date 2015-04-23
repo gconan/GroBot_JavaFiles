@@ -30,7 +30,7 @@
 			function checkCookie() {
 			    var email=getCookie("GroBotEmailCookie");
 			    if (email=="") {
-			        window.location.assign("/index.html")
+			        window.location.assign("/GroBot_index.html")
 			    }else{
 			    }
 			}

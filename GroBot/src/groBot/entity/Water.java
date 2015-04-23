@@ -37,8 +37,8 @@ public class Water{
 	
 	/**
 	 * Constructor that initializes the duration and period.
-	 * @param dur
-	 * @param per
+	 * @param dur duration of time the water pump runs for
+	 * @param per period of how often the water pump turns on
 	 */
 	public Water(int dur, int per){
 		this.duration = dur;
@@ -72,7 +72,7 @@ public class Water{
 	
 	/**
 	 * Sets the duration.
-	 * @param duration
+	 * @param duration length of time the water pump is turned on for
 	 */
 	public void setDuration(int duration){
 		this.duration = duration;
@@ -80,7 +80,7 @@ public class Water{
 	
 	/**
 	 * Sets the period.
-	 * @param period
+	 * @param period lenth of time between watering cycles
 	 */
 	public void setPeriod(int period){
 		this.period = period;
@@ -95,7 +95,7 @@ public class Water{
 	
 	/**
 	 * Sets the ID of the schedule this water schedule is associated with.
-	 * @param id_of_schedule
+	 * @param id_of_schedule Objectify ID of the schedule this water schedule is associated with
 	 */
 	public void setSchedule(long id_of_schedule){
 		this.sched_id = id_of_schedule;

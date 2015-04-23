@@ -69,9 +69,9 @@ public class GroBots {
 	 * Constructor that takes a name, MAC address, and the owner's email address.
 	 * Initializes the GroBot with a default schedule (avoids null pointer exception on the website). This schedule
 	 * can be changed by the user by running a new schedule.
-	 * @param name
-	 * @param add
-	 * @param owner
+	 * @param name User given name to the GroBot
+	 * @param add MAC address of the GroBot
+	 * @param owner email address of the User who owns this GroBot
 	 */
 	public GroBots(String name,String add, String owner){
 		this.name = name;
@@ -91,7 +91,7 @@ public class GroBots {
 	
 	/**
 	 * Changes the currentSchedule to the parameter and sets the auxiliary and air ports accordingly.
-	 * @param sched
+	 * @param Sched schedule to run on the GroBot
 	 */
 	public void runSchedule(Schedule sched){
 		this.currentSchedule = sched;
@@ -102,7 +102,7 @@ public class GroBots {
 	
 	/**
 	 * Returns the user-given name of the GroBot.
-	 * @return name given by the user
+	 * @return Name given by the user
 	 */
 	public String getName(){
 		return this.name;
@@ -166,7 +166,7 @@ public class GroBots {
 
 	/**
 	 * Sets the time remaining on the light cycle. 
-	 * @param lightTimeRemaining - information comes from the microcontroller
+	 * @param lightTimeRemaining information comes from the microcontroller
 	 */
 	public void setLightTimeRemaining(String lightTimeRemaining) {
 		this.lightTimeRemaining = lightTimeRemaining;
@@ -182,7 +182,7 @@ public class GroBots {
 
 	/**
 	 * Sets the time remaining on the water cycle. 
-	 * @param waterTimeRemaining - information comes from the microcontroller
+	 * @param waterTimeRemaining information comes from the microcontroller
 	 */
 	public void setWaterTimeRemaining(String waterTimeRemaining) {
 		this.waterTimeRemaining = waterTimeRemaining;
@@ -198,7 +198,7 @@ public class GroBots {
 
 	/**
 	 * Sets whether the auxiliary port is on or off. 
-	 * @param auxOn - information comes from the microcontroller
+	 * @param auxOn information comes from the microcontroller
 	 */
 	public void setAuxOn(String auxOn) {
 		this.auxOn = Boolean.parseBoolean(auxOn);
@@ -214,7 +214,7 @@ public class GroBots {
 
 	/**
 	 * Sets whether the air port is on or off. 
-	 * @param airOn - information comes from the microcontroller
+	 * @param airOn information comes from the microcontroller
 	 */
 	public void setAirOn(String airOn) {
 		this.airOn = Boolean.parseBoolean(airOn);
@@ -230,7 +230,7 @@ public class GroBots {
 
 	/**
 	 * Sets whether the lights are on or off. 
-	 * @param lightOn - information comes from the microcontroller
+	 * @param lightOn information comes from the microcontroller
 	 */
 	public void setLightOn(String lightOn) {
 		this.lightOn = Boolean.parseBoolean(lightOn);
@@ -246,9 +246,13 @@ public class GroBots {
 
 	/**
 	 * Sets whether the water pump is on or off. 
-	 * @param waterOn - information comes from the microcontroller
+	 * @param waterOn information comes from the microcontroller
 	 */
 	public void setWaterOn(String waterOn) {
 		this.waterOn = Boolean.parseBoolean(waterOn);
+	}
+	
+	public String getOwner(){
+		return this.ownerEmail;
 	}
 }

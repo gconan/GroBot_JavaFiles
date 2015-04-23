@@ -20,7 +20,7 @@ public class Email {
 
 	/**
 	 * Sends the user an email with a unique link to verify that he/she is human.
-	 * @param user
+	 * @param user User to send email to
 	 * @throws MessagingException
 	 */
 	public void emailVerification(User user) throws MessagingException {
@@ -35,8 +35,8 @@ public class Email {
 	
 	/**
 	 * Sends the user an email with a temporary password.
-	 * @param user
-	 * @param pass
+	 * @param user User to send email to
+	 * @param pass new password that will allow the user to log in after a password reset
 	 * @throws MessagingException
 	 */
 	public void forgotPassword(User user, String pass) throws MessagingException {
@@ -52,9 +52,9 @@ public class Email {
 
 	/**
 	 * Sends an email.
-	 * @param emailAddress
-	 * @param body
-	 * @param subject
+	 * @param emailAddress email address to send an email to
+	 * @param body body of the email
+	 * @param subject subject of the email
 	 * @throws MessagingException
 	 */
 	public void send(String emailAddress, String body, String subject) throws MessagingException {

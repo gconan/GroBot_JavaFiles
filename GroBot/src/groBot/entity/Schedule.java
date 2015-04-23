@@ -46,7 +46,7 @@ public class Schedule {
 	/**
 	 * Default schedule for Objectify.
 	 */
-	protected Schedule(){
+	public Schedule(){
 //		this.name = "";
 //		this.value = "";
 //		this.auxPort = false;
@@ -61,7 +61,7 @@ public class Schedule {
 	
 	/**
 	 * Constructor: only sets the name. Expects that the remainder of the data members will be set using the set methods.
-	 * @param name - User given name for the schedule (ie. Chile Peppers)
+	 * @param name User given name for the schedule (ie. Chile Peppers)
 	 */
 	public Schedule(String name){
 		this.name = name;
@@ -69,13 +69,12 @@ public class Schedule {
 		this.popularity = 0;
 		this.auxPort = false;
 		this.airStone = false;
-		this.popularity = 0;
 		this.scheduleID = (long)(this.name.hashCode()*31);
 	}
 	
 	/**
 	 * Set LightSchedule.
-	 * @param lights
+	 * @param lights Lights to set this Schedule with
 	 */
 	public void setLights(Lights lights){
 		this.lightSchedule = lights;
@@ -83,7 +82,7 @@ public class Schedule {
 	
 	/**
 	 * Set WaterSchedule
-	 * @param water
+	 * @param water Water to set this Schedule with
 	 */
 	public void setWater(Water water){
 		this.waterSchedule = water;
@@ -91,7 +90,7 @@ public class Schedule {
 	
 	/**
 	 * Set the name of the schedule given by the user. This will only be used when the changes the name when editing the schedule.
-	 * @param name
+	 * @param name name of the Schedule given by the user
 	 */
 	public void setName(String name){
 		this.name = name;
@@ -108,7 +107,7 @@ public class Schedule {
 	
 	/**
 	 * Set the auxiliary port.
-	 * @param aux - true=on false=off
+	 * @param aux true=on false=off
 	 */
 	public void setAux(boolean aux){
 		this.auxPort = aux;
@@ -116,7 +115,7 @@ public class Schedule {
 	
 	/**
 	 * Set the air port.
-	 * @param air - true=on false=off
+	 * @param air true=on false=off
 	 */
 	public void setAir(boolean air){
 		this.airStone = air;
@@ -147,7 +146,7 @@ public class Schedule {
 	
 	/**
 	 * Return the schedule's Objectify ID
-	 * @return
+	 * @return the Objectify ID of this Schedule
 	 */
 	public long id(){
 		return this.scheduleID;
@@ -155,8 +154,8 @@ public class Schedule {
 	
 	/**
 	 * Creates a new water schedule using the parameters and then sets this Schedule's water schedule to the new one.
-	 * @param duration - length of time the water is on
-	 * @param period - how often the water turns on
+	 * @param duration length of time the water is on
+	 * @param period how often the water turns on
 	 */
 	public void newWaterSchedule(int duration, int period){
 		this.waterSchedule = new Water();
@@ -181,7 +180,7 @@ public class Schedule {
 	
 	/**
 	 * Returns the water schedule's Objectify ID
-	 * @return long - ID
+	 * @return long - Objectify ID
 	 */
 	public long getWaterId(){
 		return this.waterSchedule.getId();
@@ -189,7 +188,7 @@ public class Schedule {
 	
 	/**
 	 * Returns the light schedule's Objectify ID
-	 * @return long - ID
+	 * @return long - Objectify ID
 	 */
 	public long getLightId(){
 		return this.lightSchedule.getId();
@@ -197,10 +196,10 @@ public class Schedule {
 	
 	/**
 	 * Creates a new light schedule and sets the new schedule to this object's light schedule
-	 * @param lightsOnTime - time the lights turn on (in military time)
-	 * @param lightsOffTime - time the lights turn off (in military time)
-	 * @param pin1 - lights on pin one on/off
-	 * @param pin2 - lights on pin two on/off
+	 * @param lightsOnTime time the lights turn on (in military time)
+	 * @param lightsOffTime time the lights turn off (in military time)
+	 * @param pin1 lights on pin one on/off
+	 * @param pin2 lights on pin two on/off
 	 */
 	public void newLights(int lightsOnTime, int lightsOffTime, boolean pin1, boolean pin2){
 		this.lightSchedule = new Lights(lightsOnTime, lightsOffTime, pin1, pin2);
@@ -210,8 +209,8 @@ public class Schedule {
 	
 	/**
 	 * Returns the Schedule stored in Objectify using the ID.
-	 * @param id
-	 * @return
+	 * @param id Objectify ID of the desired Schedule
+	 * @return Schedule linked to the ID provided
 	 */
 	public static Schedule get(Long id) {
 		return UserDAO.INSTANCE.getSchedule(id);
@@ -235,7 +234,7 @@ public class Schedule {
 	
 	/**
 	 * Returns the Objectify ID.
-	 * @return long - ID
+	 * @return long - Objectify ID
 	 */
 	public long getId(){
 		return this.scheduleID;
@@ -283,10 +282,10 @@ public class Schedule {
 
 	/**
 	 * Sets the light timing and pins for the light schedule. Used when a user edits his/her schedule.
-	 * @param lightsOnTime
-	 * @param lightsOffTime
-	 * @param pin1
-	 * @param pin2
+	 * @param lightsOnTime time to turn the lights on
+	 * @param lightsOffTime time to turn the lights off
+	 * @param pin1 set 1 lights
+	 * @param pin2 set 2 lights
 	 */
 	public void setLights(int lightsOnTime, int lightsOffTime, boolean pin1, boolean pin2) {
 		this.lightSchedule.setLOn(lightsOnTime);
@@ -297,8 +296,8 @@ public class Schedule {
 
 	/**
 	 * Sets the water duration and period for the water schedule. Used when a user edits his/her schedule.
-	 * @param wlength
-	 * @param wperiod
+	 * @param wlength length of time to run the water pump
+	 * @param wperiod the frequency of how often the water pump turns on
 	 */
 	public void setWaterSchedule(int wlength, int wperiod) {
 		this.waterSchedule.setDuration(wlength);
@@ -308,7 +307,7 @@ public class Schedule {
 
 	/**
 	 * Sets the Objectify ID of the schedule.
-	 * @param hashCode
+	 * @param hashCode ID for storing in Objectify
 	 */
 	public void setID(long hashCode) {
 		this.scheduleID = hashCode;

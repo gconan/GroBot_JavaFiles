@@ -29,7 +29,7 @@
 			function checkCookie() {
 			    var email=getCookie("GroBotEmailCookie");
 			    if (email=="") {
-			        window.location.assign("/index.html")
+			        window.location.assign("/GroBot_index.html")
 			    }else{
 			        
 			    }
@@ -65,7 +65,7 @@
 							if(session.getAttribute("GroBotEmail") != null){
 								String em = (String)session.getAttribute("GroBotEmail");
 								String name = (String)session.getAttribute("name");
-								GroBots bot = UserDAO.INSTANCE.getUserBots(em);
+								GroBots bot = UserDAO.INSTANCE.getCurrentUserBot(em);
 								String botName = bot.getName();
 								Schedule sched = bot.getCurrentSchedule();
 								String sName = sched.getName();

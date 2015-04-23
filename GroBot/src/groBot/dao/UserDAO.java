@@ -19,10 +19,10 @@ public enum UserDAO {
 	
 	/**
 	 * Returns the GroBot the user is currently connected to.
-	 * @param email
+	 * @param email email address of user
 	 * @return currently connected GroBot
 	 */
-	public GroBots getUserBots(String email){
+	public GroBots getCurrentUserBot(String email){
 		User user= getUserByEmail(email);
 		return user.getGroBot();
 	}
@@ -31,46 +31,37 @@ public enum UserDAO {
 	
 	/**
 	 * Adds user to database. Acts as an overwrite as well (saves updated users).
-	 * @author conangammel
-	 * @param User
-	 * @return User
+	 * @param user save this user to the DataStore
 	 */
-    public User addUser(User user) {  
+    public void addUser(User user) {  
     	synchronized(this) { 
     		ofy().save().entity(user).now();
     	}
-    	return user;
     }
     
     /**
 	 * Deletes the user from the DataStore.
-	 * @author conangammel
-	 * @param User
-	 * @return User
+	 * @param user to be deleted
 	 */
-    public User removeUser(User user) {
+    public void removeUser(User user) {
     	ofy().delete().entities(user);
-    	return user;
     }
  
     
     /**
 	 * Activates the user so he/she can login.
-	 * @author conangammel
-	 * @param user
-	 * @return User
+	 * @param user to be activated
 	 */
-    public User activateUser(User user) {	
+    public void activateUser(User user) {	
     	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
     	fromDB.activate();
     	ofy().save().entity(fromDB).now();
-    	return fromDB;
     }
     
     /**
      * Updates user's password in the DataStore.
-     * @param user
-     * @param newPassword
+     * @param user user to change password
+     * @param newPassword user's desired new password
      */
     public void setPassword(User user, String newPassword) {
     	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
@@ -80,7 +71,7 @@ public enum UserDAO {
     
     /**
 	 * Generates random password and updates user object in database with new password.
-	 * @param user
+	 * @param user user who's password is being reset
 	 */
     public void resetPassword(User user) {
     	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
@@ -90,9 +81,8 @@ public enum UserDAO {
      
     /**
 	 * Returns the User associated with the given email address.
-	 * @author conangammel
-	 * @param email
-	 * @return User
+	 * @param email email address of user being retrieved
+	 * @return User the user corresponding to the email address provided
 	 */
     public User getUserByEmail(String email){
     	User fromDB = ofy().load().type(User.class).id(email).now();
@@ -101,9 +91,8 @@ public enum UserDAO {
     
     /**
 	 * Get user from DataStore using his/her accessCode
-	 * @author conangammel
-	 * @param User
-	 * @return User
+	 * @param accessCode unique code given to a user
+	 * @return User the user linked to the accessCode provided
 	 */
     public User getUserByAccessCode(String accessCode) {
     	User fromDB = ofy().load().type(User.class).filter("accessCode", accessCode).first().now();
@@ -112,8 +101,8 @@ public enum UserDAO {
     
     /**
      * Returns the name of the GroBot the user is connected to.
-     * @param email - address of user
-     * @return String - name of the GroBot the user is connected to
+     * @param email address of user
+     * @return String name of the GroBot the user is connected to
      */
     public String getBotNameByOwner(String email){
     	User fromDB = ofy().load().type(User.class).id(email).now();
@@ -123,8 +112,7 @@ public enum UserDAO {
 	/**
 	 * Deletes the user's Grobots, the user's schedules (which includes lights and water since those are stored too)
 	 * and finally the user is deleted. NOT REVERSIBLE
-	 * @author conangammel
-	 * @param email - address of user to be deleted
+	 * @param email address of user to be deleted
 	 */
 	public void deleteAccount(String email){
 		User fromDB = ofy().load().type(User.class).id(email).now();
@@ -151,8 +139,8 @@ public enum UserDAO {
 
 	/**
 	 * Returns the schedule associated with the ID parameter passed.
-	 * @param id
-	 * @return Schedule
+	 * @param id Objectify ID of the schedule to return
+	 * @return Schedule schedule linked to the Objectify ID
 	 */
 	public Schedule getSchedule(Long id) {
 		return ofy().load().type(Schedule.class).id(id).now();
@@ -160,7 +148,7 @@ public enum UserDAO {
 
 	/**
 	 * Add a Schedule to the DataStore. Also saves changes to existing Schedules.
-	 * @param sched
+	 * @param sched schedule to add or overwrite to the DataStore
 	 */
 	public void addSchedule(Schedule sched) {
 		synchronized(this){
@@ -170,7 +158,7 @@ public enum UserDAO {
 
 	/**
 	 * Add a GroBot to the DataStore. Also saves changes to existing GroBots.
-	 * @param bot
+	 * @param bot GroBot to add or overwrite to the DataStore
 	 */
 	public void addGroBot(GroBots bot) {
 		ofy().save().entity(bot).now();
@@ -178,8 +166,8 @@ public enum UserDAO {
 
 	/**
 	 * Returns a GroBot given the id.
-	 * @param id
-	 * @return GroBot
+	 * @param id Objectify ID of GroBot
+	 * @return GroBot GroBot linked to the Objectify ID provided
 	 */
 	public GroBots getGroBot(Long id) {
 		return ofy().load().type(GroBots.class).id(id).now();
@@ -187,7 +175,7 @@ public enum UserDAO {
 
 	/**
 	 * Deletes the schedule associated with the id.
-	 * @param id
+	 * @param id Objectify ID of Schedule to be removed
 	 */
 	public void removeSchedule(Long id) {
 		ofy().delete().type(Schedule.class).id(id);

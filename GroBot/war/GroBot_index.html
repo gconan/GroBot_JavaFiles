@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>GroBot</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="grobot.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+	function getCookie(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0; i<ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1);
+	        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+	    }
+	    return "";
+	}
+	
+	function checkCookie() {
+	    var email=getCookie("email");
+	    if (email!="") {
+	        window.location.assign("/welcome.jsp")
+	    }else{
+	        
+	    }
+	}
+</script>
+</head>
+
+<body>
+<script>
+		checkCookie();
+</script>
+		<div id="titleBoxX">
+			<div id="logo">
+			<a href="/GroBot_index.html">
+				<h1>GroBot</h1>
+				<br/>
+				<p>What you grow is not our business</p>
+			</a>
+			</div>
+			</div>
+		  <div id="content">
+		  <br>
+		  <br>
+                <center>
+					<h2 class="title">Welcome to GroBot!</h2>
+					</center>
+				  <p>Welcome to the GroBot's website. If you have not registered, please do so by clicking the link below. Otherwise, you can login here to interact with your GroBot!</p>				 
+                  <div id="loginbox">
+                    <p>
+                    <center>
+                    <form action="/login" method="post">
+                    	<table style="width: 45%">
+                    		<tr style="text-align:right">
+                    			<td>
+                      <label for="textfield">UserID:</label>
+                      <input type="text" name="username" id="username" autofocus />
+                      <br>
+                  </td>
+                  </tr>
+                  <tr style="text-align:right">
+                    <td>
+                      <label for="password">Password:</label>
+                      <input type="password" name="password" id="password" /><br><br>
+                      <br>
+                  	</td>
+                  </tr>
+              </table>
+                      <input class="btn" type="submit" name="Login" id="submit" value="Login" />
+                      <br><br>
+                    </form>
+                    <div class="forgotpass" id="forgotpass"><a href="forgotpassword.html">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="registration.html">Need to Register?</a></div>
+                    </center>
+                    </p>
+                  </div>
+                  <p>
+                  </p>
+            </div>
+            <div id="footer">
+			<div id="footer-content">
+				<p>The University of Texas at Austin ECE Senior Design Project, sponsored by Texas Instruments</p> <!-- end #footer -->
+			</div>
+		</div>
+</html>

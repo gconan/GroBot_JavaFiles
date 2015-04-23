@@ -56,7 +56,6 @@ public class User implements Serializable{
 	
 	/**
 	 * Constructs a user object and his/her access code through HashCode.
-	 * @author conangammel
 	 * @param password
 	 * @param email
 	 */
@@ -126,7 +125,6 @@ public class User implements Serializable{
 
 	/**
 	 * Default constructor for Objectify.
-	 * @author conangammel
 	 */
 	@SuppressWarnings("unused")
 	private User() {
@@ -135,7 +133,6 @@ public class User implements Serializable{
 	
 	/**
 	 * Returns the user's access code.
-	 * @author conangammel
 	 * @return accessCode
 	 */
 	public String getAccess_code() {
@@ -144,7 +141,6 @@ public class User implements Serializable{
 	
 	/**
 	 * Returns the user's password.
-	 * @author conangammel
 	 * @return password
 	 */
 	public String getPassword() {
@@ -196,7 +192,7 @@ public class User implements Serializable{
 	
 	/**
 	 * Adds a new GroBot to the user's list of GroBots.
-	 * @param bot
+	 * @param bot GroBot to add to the user's list of GroBots
 	 */
 	public void addGroBot(GroBots bot){
 		if(this.myBots==null)this.myBots = new ArrayList<GroBots>();
@@ -208,7 +204,6 @@ public class User implements Serializable{
 	
 	/**
 	 * Return registration status of the user.
-	 * @author conangammel
 	 * @return boolean
 	 */
 	public boolean getStatus() {
@@ -226,7 +221,6 @@ public class User implements Serializable{
 	
 	/**
 	 * Set user's status to true (they are allowed to log-in)
-	 * @author conangammel
 	 */
 	public void activate() {
 		this.registrationStatus = true;
@@ -234,7 +228,6 @@ public class User implements Serializable{
 	
 	/**
 	 * Updates user object with given password
-	 * @author conangammel
 	 * @param String
 	 */
     public void setPassword(String newPassword) {
@@ -243,7 +236,6 @@ public class User implements Serializable{
 	
     /**
 	 * Generates random password and updates user object with new password.
-	 * @author conangammel
 	 */
     public String resetPassword() {
     	StringBuilder newPassw = new StringBuilder("");
@@ -291,8 +283,8 @@ public class User implements Serializable{
 	}
 	
 	/**
-	 * Add a schedule to the user's list.
-	 * @param schedule
+	 * Add a schedule to the user's list. Add the schedule in the appropriate order of popularity.
+	 * @param schedule Schedule to add to the user's list of custom schedules
 	 */
 	public void addCustomSchedule(Schedule schedule){
 		if(this.customSchedules == null) this.customSchedules = new ArrayList<Long>();
@@ -310,6 +302,27 @@ public class User implements Serializable{
 	}
 	
 	/**
+	 * Maintains the schedules in an ordering of popularity
+	 * @param id ID of the schedule that just increased in popularity
+	 */
+	public void orderScheduleList(long id){
+		int thisPop = UserDAO.INSTANCE.getSchedule(id).getPopularity();
+		int newIndex=-1;
+		
+		for(int i=this.customSchedules.indexOf(id); i>0; i--){
+			if(thisPop<=UserDAO.INSTANCE.getSchedule(this.customSchedules.get(i-1)).getPopularity()){
+				break;
+			}else{
+				newIndex=i-1;
+			}
+		}
+		if(newIndex!=-1){
+			this.customSchedules.remove(id);
+			this.customSchedules.add(newIndex, id);
+		}
+	}
+	
+	/**
 	 * Return the name of the GroBot the user is connected to.
 	 * @return name of currently connected GroBot
 	 */
@@ -319,7 +332,7 @@ public class User implements Serializable{
 
 	/**
 	 * Delete a schedule given the ID. If the GroBot is running this schedule, then change it to the schedule at the head of the list.
-	 * @param id
+	 * @param id Objectify ID of the Schedule to remove from the user's list as well as from Objectify
 	 */
 	public void removeSchedule(Long id) {
 		this.customSchedules.remove(id);

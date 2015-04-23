@@ -40,7 +40,7 @@ public class RegistrationServletTest extends RegistrationServlet{
     public String baseUrl = "http://localhost:8888/";
  
     /**
-     * @author Michael
+     * 
      */
     @Before
     public void init() {
@@ -49,7 +49,7 @@ public class RegistrationServletTest extends RegistrationServlet{
     }
     
     /**
-     * @author Michael
+     * 
      */
     @After
     public void endSession() {
@@ -58,7 +58,7 @@ public class RegistrationServletTest extends RegistrationServlet{
     }
 	
     /**
-     * @author Michael
+     * 
      */
     /*@Test
     public void test1(){
@@ -69,7 +69,7 @@ public class RegistrationServletTest extends RegistrationServlet{
     }*/
    
     /**
-     * @author Michael
+     * 
      */
 	/*@Test
 	public void testCorrectRegistration(){
@@ -86,7 +86,7 @@ public class RegistrationServletTest extends RegistrationServlet{
     */
     
     /**
-     * @author Michael
+     * 
      */
     /*
 	@Test
@@ -103,7 +103,7 @@ public class RegistrationServletTest extends RegistrationServlet{
 	}*/
 	
 	/**
-     * @author Michael
+     * 
      */
     /*
 	@Test
@@ -120,7 +120,7 @@ public class RegistrationServletTest extends RegistrationServlet{
 	}*/
 	
     /**
-     * @author Michael
+     * 
      */
 	@Test
 	public void testEmailInUse(){

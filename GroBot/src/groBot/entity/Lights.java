@@ -46,12 +46,12 @@ public class Lights {
 	
 	/**
 	 * Constructor used by this package only. This is used by the addNewScheduleServlet.
-	 * @param onT - on time of the lights
-	 * @param offT - off time of the lights
-	 * @param pin1 - pin1 boolean true=on false=off
-	 * @param pin2 - pin2 boolean true=on false=off
+	 * @param onT on time of the lights
+	 * @param offT off time of the lights
+	 * @param pin1 pin1 boolean true=on false=off
+	 * @param pin2 pin2 boolean true=on false=off
 	 */
-	protected Lights(int onT, int offT, Boolean pin1, Boolean pin2){
+	public Lights(int onT, int offT, Boolean pin1, Boolean pin2){
 		this.onTime = onT;
 		this.offTime = offT;
 		this.lightPins = convertBooleantoInt(pin1, pin2);
@@ -60,8 +60,8 @@ public class Lights {
 
 	/**
 	 * This method takes in the light pin booleans and converts it to an integer.
-	 * @param pin1 - pin1 boolean true=on false=off
-	 * @param pin2 - pin2 boolean true=on false=off
+	 * @param pin1 pin1 boolean true=on false=off
+	 * @param pin2 pin2 boolean true=on false=off
 	 * @return Integer - 00 for both off.
 	 * 01 for pin1 off and pin2 on.
 	 * 02 for pin1 on and pin2 off.
@@ -74,10 +74,9 @@ public class Lights {
 			return 1;
 		}else if(pin1 && !pin2){
 			return 2;
-		}else if(pin1 && pin2){
+		}else{
 			return 3;
 		}
-		return 0;
 	}
 	
 	/**
@@ -97,6 +96,7 @@ public class Lights {
 	 */
 	public long getId(){
 		return this.id;
+		
 	}
 	
 	/**
@@ -124,7 +124,7 @@ public class Lights {
 	
 	/**
 	 * Set the ID of the schedule this lightSchedule is associated with.
-	 * @param id_of_schedule
+	 * @param id_of_schedule id of schedule that this Lights belongs to
 	 */
 	public void setSchedule(long id_of_schedule){
 		this.sched_id = id_of_schedule;
@@ -132,7 +132,7 @@ public class Lights {
 
 	/**
 	 * Set the light on time.
-	 * @param lightsOnTime - in military time
+	 * @param lightsOnTime in military time
 	 */
 	public void setLOn(int lightsOnTime) {
 		this.onTime = lightsOnTime;
@@ -141,7 +141,7 @@ public class Lights {
 
 	/**
 	 * Set the light off time.
-	 * @param lightsOffTime - in militarty time
+	 * @param lightsOffTime in military time
 	 */
 	public void setLOff(int lightsOffTime) {
 		this.offTime = lightsOffTime;
@@ -150,11 +150,10 @@ public class Lights {
 
 	/**
 	 * Set which light pins are turned on or off.
-	 * @param s1
-	 * @param s2
+	 * @param set1 light set one
+	 * @param set2 light set two
 	 */
-	public void setPins(boolean s1, boolean s2) {
-		this.lightPins = this.convertBooleantoInt(s1, s2);
+	public void setPins(boolean set1, boolean set2) {
+		this.lightPins = this.convertBooleantoInt(set1, set2);
 	}
-
 }
