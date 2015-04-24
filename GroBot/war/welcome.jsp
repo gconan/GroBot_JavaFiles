@@ -84,7 +84,7 @@
 								<p>
 									<form action="/growNow" method="post">
 										<input type="hidden" name="GroBotEmail" value="${fn:escapeXml(em)}"/>
-										<select name="schedule" autofocus>
+										<select name="schedule" id="scheduleDropDown" autofocus>
 											<%
 												for(int i=0; i<schedules.size(); i++){
 													pageContext.setAttribute("value", schedules.get(i).getValue());

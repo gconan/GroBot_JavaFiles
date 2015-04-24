@@ -1,11 +1,8 @@
 package groBot.dao;
 
-import static groBot.services.OfyService.ofy;
 import groBot.entity.GroBots;
-import groBot.entity.Lights;
 import groBot.entity.Schedule;
 import groBot.entity.User;
-import groBot.entity.Water;
 
 /**
  * UserDAO is the "middleMan" between code and the DataStore. 
@@ -15,7 +12,7 @@ import groBot.entity.Water;
  */
 public enum UserDAO {  
 	INSTANCE;
-	
+	RealDAO dao= new RealDAO();
 	
 	/**
 	 * Returns the GroBot the user is currently connected to.
@@ -23,8 +20,7 @@ public enum UserDAO {
 	 * @return currently connected GroBot
 	 */
 	public GroBots getCurrentUserBot(String email){
-		User user= getUserByEmail(email);
-		return user.getGroBot();
+		return dao.getCurrentUserBot(email);
 	}
 	
 	
@@ -34,9 +30,7 @@ public enum UserDAO {
 	 * @param user save this user to the DataStore
 	 */
     public void addUser(User user) {  
-    	synchronized(this) { 
-    		ofy().save().entity(user).now();
-    	}
+    	dao.addUser(user);
     }
     
     /**
@@ -44,7 +38,7 @@ public enum UserDAO {
 	 * @param user to be deleted
 	 */
     public void removeUser(User user) {
-    	ofy().delete().entities(user);
+    	dao.removeUser(user);
     }
  
     
@@ -53,9 +47,7 @@ public enum UserDAO {
 	 * @param user to be activated
 	 */
     public void activateUser(User user) {	
-    	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
-    	fromDB.activate();
-    	ofy().save().entity(fromDB).now();
+    	dao.activateUser(user);
     }
     
     /**
@@ -64,9 +56,7 @@ public enum UserDAO {
      * @param newPassword user's desired new password
      */
     public void setPassword(User user, String newPassword) {
-    	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
-    	fromDB.setPassword(newPassword);
-    	ofy().save().entity(fromDB).now();
+    	dao.setPassword(user, newPassword);
     }
     
     /**
@@ -74,9 +64,7 @@ public enum UserDAO {
 	 * @param user user who's password is being reset
 	 */
     public void resetPassword(User user) {
-    	User fromDB = ofy().load().type(User.class).id(user.getEmail()).now();
-    	fromDB.resetPassword();
-    	ofy().save().entity(fromDB).now();
+    	dao.resetPassword(user);
     }
      
     /**
@@ -85,8 +73,7 @@ public enum UserDAO {
 	 * @return User the user corresponding to the email address provided
 	 */
     public User getUserByEmail(String email){
-    	User fromDB = ofy().load().type(User.class).id(email).now();
-    	return fromDB;
+    	return dao.getUserByEmail(email);
     }
     
     /**
@@ -95,8 +82,7 @@ public enum UserDAO {
 	 * @return User the user linked to the accessCode provided
 	 */
     public User getUserByAccessCode(String accessCode) {
-    	User fromDB = ofy().load().type(User.class).filter("accessCode", accessCode).first().now();
-    	return fromDB;
+    	return dao.getUserByAccessCode(accessCode);
     }
     
     /**
@@ -105,8 +91,7 @@ public enum UserDAO {
      * @return String name of the GroBot the user is connected to
      */
     public String getBotNameByOwner(String email){
-    	User fromDB = ofy().load().type(User.class).id(email).now();
-    	return fromDB.getCurrentBotName();
+    	return dao.getBotNameByOwner(email);
     }
 
 	/**
@@ -115,25 +100,7 @@ public enum UserDAO {
 	 * @param email address of user to be deleted
 	 */
 	public void deleteAccount(String email){
-		User fromDB = ofy().load().type(User.class).id(email).now();
-		
-		//delete GroBots
-		for(GroBots g: fromDB.getAllBots()){
-			ofy().delete().type(GroBots.class).id(g.getId());
-		}
-		
-		//delete schedule and components
-		for(Long id: fromDB.getSchedules()){
-			Schedule s = ofy().load().type(Schedule.class).id(id).now();
-			ofy().delete().type(Water.class).id(s.getWaterId());
-			ofy().delete().type(Lights.class).id(s.getLightId());
-			ofy().delete().type(Schedule.class).id(id);
-		}
-		
-		//delete the user
-		ofy().delete().type(User.class).id(email);
-		
-		//database cleaned up from all traces of this user
+		dao.deleteAccount(email);
 	}
 
 
@@ -143,7 +110,7 @@ public enum UserDAO {
 	 * @return Schedule schedule linked to the Objectify ID
 	 */
 	public Schedule getSchedule(Long id) {
-		return ofy().load().type(Schedule.class).id(id).now();
+		return dao.getSchedule(id);
 	}
 
 	/**
@@ -151,9 +118,7 @@ public enum UserDAO {
 	 * @param sched schedule to add or overwrite to the DataStore
 	 */
 	public void addSchedule(Schedule sched) {
-		synchronized(this){
-			ofy().save().entity(sched).now();
-		}
+		dao.addSchedule(sched);
 	}
 
 	/**
@@ -161,7 +126,7 @@ public enum UserDAO {
 	 * @param bot GroBot to add or overwrite to the DataStore
 	 */
 	public void addGroBot(GroBots bot) {
-		ofy().save().entity(bot).now();
+		dao.addGroBot(bot);
 	}
 
 	/**
@@ -170,7 +135,7 @@ public enum UserDAO {
 	 * @return GroBot GroBot linked to the Objectify ID provided
 	 */
 	public GroBots getGroBot(Long id) {
-		return ofy().load().type(GroBots.class).id(id).now();
+		return dao.getGroBot(id);
 	}
 
 	/**
@@ -178,6 +143,6 @@ public enum UserDAO {
 	 * @param id Objectify ID of Schedule to be removed
 	 */
 	public void removeSchedule(Long id) {
-		ofy().delete().type(Schedule.class).id(id);
+		dao.removeSchedule(id);
 	}
 }

@@ -12,9 +12,6 @@ import org.junit.Test;
 
 public class ScheduleTester {
 	
-	//MOCKS
-		//final UserDAO dao = createStrictMock(UserDAO.class);
-
 	@Test
 	public void testDefaultContstructor() {
 		Schedule test = new Schedule();	

@@ -331,7 +331,7 @@
 					<br>
 					<br>
 					<center>
-						<button class="btn" type="button" onclick="validateForm()">Save Scedule</button>
+						<button class="btn" type="button" id="newSchedButton" onclick="validateForm()">Save Scedule</button>
 					</center>
 			</form>	
 		</div>

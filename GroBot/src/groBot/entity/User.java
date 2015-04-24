@@ -127,7 +127,24 @@ public class User implements Serializable{
 	 * Default constructor for Objectify.
 	 */
 	@SuppressWarnings("unused")
-	private User() {
+	public User() {
+		this.registrationStatus = false;
+		this.password = "password";
+		this.firstName = "test";
+		this.lastName = "tester";
+		this.email = "test@test.com";
+		long hash = Math.abs(email.hashCode() * (long) Math.pow(31,5));	
+		StringBuilder code = new StringBuilder();	                         
+		while (hash > 0) {
+			code.append((char)('a' + hash%27));
+			hash/= 27;
+		}
+		this.accessCode = code.toString();
+		
+		this.myBots = new ArrayList<GroBots>();
+		this.currentBot = new GroBots();
+		this.currentBotName = currentBot.getName();
+		this.customSchedules = new ArrayList<Long>();
 		
 	}
 	

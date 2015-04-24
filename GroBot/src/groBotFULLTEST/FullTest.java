@@ -1,6 +1,7 @@
 package groBotFULLTEST;
 
 import groBot.entity.test.*;
+import groBot.servlet.test.ScheduleServletTester;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -19,6 +20,7 @@ import org.junit.runners.Suite;
   WaterTester.class,
   ScheduleTester.class,
   UserTester.class,
+  ScheduleServletTester.class,
   LightsTester.class}
 )
 

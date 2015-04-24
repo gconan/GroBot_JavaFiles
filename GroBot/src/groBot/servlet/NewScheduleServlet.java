@@ -101,10 +101,13 @@ public class NewScheduleServlet extends SecureServlet {
 		sched.setLightID();
 		
 		user.addCustomSchedule(sched);
+		
+		UserDAO.INSTANCE.addSchedule(sched);
+		
 		user.orderScheduleList(sched.getId());
 		
 		UserDAO.INSTANCE.addUser(user);
-		UserDAO.INSTANCE.addSchedule(sched);
+		
 		
 		String encodedURL = resp.encodeRedirectURL("welcome.jsp");
 		resp.sendRedirect(encodedURL);
